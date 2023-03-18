@@ -26,14 +26,14 @@ const projects = [
         description: "LabyCreator est une petite application java qui permet de créer et résoudre un labyrinthe automatiquement.",
         link: "https://github.com/Carlier-Maxime/labyCreator",
         img: "labyCreator.gif",
-        competences: ['Java','Java Swing','Git']
+        competences: ['Java','JavaSwing','Git']
     },
     {
         name: "DrawIO",
         description: "DrawIO est une petite application java qui permet de dessiner a la souris.",
         link: "https://github.com/Carlier-Maxime/DrawIO",
         img: "drawIO.gif",
-        competences: ['Java','Java Swing','Git']
+        competences: ['Java','JavaSwing','Git']
     },
     {
         name: "Boto",
