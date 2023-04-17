@@ -10,14 +10,31 @@ const competences = {
     Laravel: "https://laravel.com/",
     SQL: "https://sql.sh/",
     Python: "https://www.python.org/",
-    PyQt: "https://wiki.python.org/moin/PyQt"
+    PyQt: "https://wiki.python.org/moin/PyQt",
+    C: "https://fr.wikipedia.org/wiki/C_(langage)",
+    SDL: "https://www.libsdl.org/",
+    CPlusPlus: "https://fr.wikipedia.org/wiki/C%2B%2B"
 };
 
 const projects = [
     {
+        name: "lanceur rayons",
+        description: "un lanceur de rayons réalisé en C++ (GPU non pris en charge). fait en groupe de 2 étudiant",
+        link: "https://github.com/Carlier-Maxime/lanceur-rayons",
+        img: "lanceur-rayons.png",
+        competences: ["CPlusPlus", "Git"]
+    },
+    {
+        name: "Puissance4",
+        description: "Le célébre jeu Puissance 4 réalisé en C avec la lib SDL2. fait en groupe de 2 étudiant",
+        link: "https://github.com/Carlier-Maxime/Puissance4",
+        img: "puissance4.gif",
+        competences: ["C", "SDL", "Git"]
+    },
+    {
         name: "Portfolio",
         description: "Portfolio avec tous mes projet et des information sur moi.",
-        link: "https://github.com/Carlier-Maxime/Portfolio",
+        link: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io",
         img: "portfolio.jpg",
         competences: ['HTML','CSS','Angular','Typescript','Git']
     },
