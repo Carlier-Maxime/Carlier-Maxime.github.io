@@ -164,7 +164,8 @@ hr.solid {
     align-items: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 450px;
+    background-size: auto 448px;
+    background-position-x: center;
     background-position-y: 60px;
     display: flex;
     flex-direction: column;
