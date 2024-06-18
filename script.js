@@ -13,10 +13,18 @@ const competences = {
     PyQt: "https://wiki.python.org/moin/PyQt",
     C: "https://fr.wikipedia.org/wiki/C_(langage)",
     SDL: "https://www.libsdl.org/",
-    CPlusPlus: "https://fr.wikipedia.org/wiki/C%2B%2B"
+    CPlusPlus: "https://fr.wikipedia.org/wiki/C%2B%2B",
+    Shell: "https://fr.wikipedia.org/wiki/Shell_Unix"
 };
 
 const projects = [
+    {
+        name: "Interpreter Lisp",
+        description: "Un interpréteur du language Lisp, plus précisément la version Scheme. Réalisée en Solo dans le cadre d'un projet de ma première année de Master Informatique",
+        link: "https://github.com/Carlier-Maxime/InterpreterLisp",
+        img: "interpreter_lisp.gif",
+        competences: ["Java", "Shell", "Git"]
+    },
     {
         name: "lanceur rayons",
         description: "un lanceur de rayons réalisé en C++ (GPU non pris en charge). fait en groupe de 2 étudiant",
