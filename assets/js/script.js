@@ -1,49 +1,47 @@
 import * as skill from "./competence.js";
 
-const cpt = skill.competences;
-
 const projects = [
     {
         name: "Interpreter Lisp",
         description: "Un interpréteur du language Lisp, plus précisément la version Scheme. Réalisée en Solo dans le cadre d'un projet de ma première année de Master Informatique",
         link: "https://github.com/Carlier-Maxime/InterpreterLisp",
         img: "interpreter_lisp.gif",
-        competences: [cpt['Java'], cpt['Shell'], cpt['Git']]
+        competences: [skill.JAVA, skill.SHELL, skill.GIT]
     },
     {
         name: "lanceur rayons",
         description: "un lanceur de rayons réalisé en C++ (GPU non pris en charge). fait en groupe de 2 étudiant",
         link: "https://github.com/Carlier-Maxime/lanceur-rayons",
         img: "lanceur-rayons.png",
-        competences: [cpt['CPlusPlus'], cpt['Git']]
+        competences: [skill.CPP, skill.GIT]
     },
     {
         name: "Puissance4",
         description: "Le célébre jeu Puissance 4 réalisé en C avec la lib SDL2. fait en groupe de 2 étudiant",
         link: "https://github.com/Carlier-Maxime/Puissance4",
         img: "puissance4.gif",
-        competences: [cpt['C'], cpt['SDL'], cpt['Git']]
+        competences: [skill.C, skill.SDL, skill.GIT]
     },
     {
         name: "Portfolio",
         description: "Portfolio avec tous mes projet et des information sur moi.",
         link: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io",
         img: "portfolio.jpg",
-        competences: [cpt['HTML'],cpt['CSS'],cpt['Angular'],cpt['TS'],cpt['Git']]
+        competences: [skill.HTML,skill.CSS,skill.ANGULAR,skill.TS,skill.GIT]
     },
     {
         name: "LabyCreator",
         description: "LabyCreator est une petite application java qui permet de créer et résoudre un labyrinthe automatiquement.",
         link: "https://github.com/Carlier-Maxime/labyCreator",
         img: "labyCreator.gif",
-        competences: [cpt['Java'],cpt['JavaSwing'],cpt['Git']]
+        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT]
     },
     {
         name: "DrawIO",
         description: "DrawIO est une petite application java qui permet de dessiner a la souris.",
         link: "https://github.com/Carlier-Maxime/DrawIO",
         img: "drawIO.gif",
-        competences: [cpt['Java'],cpt['JavaSwing'],cpt['Git']]
+        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT]
     },
     {
         name: "Boto",
@@ -54,7 +52,7 @@ const projects = [
         J'étais bien entendu du coté back-end. (non hébergé)",
         link: "https://github.com/Carlier-Maxime/boto",
         img: "boto.jpg",
-        competences: [cpt['PHP'],cpt['Laravel'],cpt['Git'],cpt['SQL']]
+        competences: [skill.PHP,skill.LARAVEL,skill.GIT,skill.SQL]
     },
     {
         name: "Sokoban",
@@ -62,7 +60,7 @@ const projects = [
         fait en groupe de 4 étudiant durant mon DUT info a l'IUT de lens.",
         link: "https://github.com/Carlier-Maxime/sokoban",
         img: "sokoban.gif",
-        competences: [cpt['Python'],cpt['PyQt'],cpt['Git']]
+        competences: [skill.PYTHON,skill.PYQT,skill.GIT]
     }
 ];
 
