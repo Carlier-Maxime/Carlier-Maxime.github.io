@@ -6,7 +6,7 @@
     {{ content }}
     {% include footer.html %}
     {% if page.js %}
-    <script src="{{ page.js }}"></script>
+    <script type="module" src="assets/js/{{ page.js }}"></script>
     {% endif %}
     </body>
 </html>
