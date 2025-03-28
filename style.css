@@ -399,12 +399,6 @@ hr.solid {
     background-color: #282828;
 }
 
-.about .project li {
-    float: left;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
 .contact {
     margin: 50px auto;
     box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
