@@ -79,3 +79,4 @@ export const MANJARO = addCompetence("Manjaro", "Manjaro (KDE Plasma)", "https:/
 export const UBUNTU = addCompetence_("Ubuntu", "https://www.ubuntu-fr.org/", Category.OS);
 export const FEDORA = addCompetence_("Fedora", "https://fedoraproject.org/fr/", Category.OS);
 export const WINDOWS = addCompetence_("Windows", "https://www.microsoft.com/fr-fr/windows/", Category.OS);
+export const CSHARP = addCompetence("CSHARP", "C#", "https://fr.wikipedia.org/wiki/C_Sharp", Category.LANGUAGE);
