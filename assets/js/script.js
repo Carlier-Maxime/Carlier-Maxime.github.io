@@ -7,7 +7,7 @@ const projects = [
             "Ce jeu à était réalisé en duo avec Ahmed Zerrouk. Les mécanique sur lesquel j'ai travaillé sont : les statistique, les quêtes, l'inventaire, les items et un peu sur le Material Landscape.\n" +
             "Pour un lien vers le code source du projet, il faut d'abord que j'en discute avec mon collégue.",
         link: "",
-        img: "",
+        img: "MGAProject.gif",
         competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER]
     },
     {
@@ -19,7 +19,7 @@ const projects = [
             "Et le 'Idle' dans le nom du jeu viens du fait que je compte rajouter les mécanique de jeu de type Idle.\n" +
             "Pour l'instant encore au stade de l'alpha",
         link: "https://github.com/Carlier-Maxime/IdleNonogram3D",
-        img: "",
+        img: "IdleNonogram3D.gif",
         competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER]
     },
     {
@@ -29,7 +29,7 @@ const projects = [
             "Et pour le second semestre l'objectif était que l'IA récolte quelque chose dans une ville et le dépose à un endroit spécifique comme un dépot/\n" +
             "Cela de manière autonomne en optimisant sont trajet et en évitant d'aller chercher des objets prochent du joueur afin de ne pas géner le joueur sur sa propre récolte.",
         link: "https://github.com/Carlier-Maxime/Steering",
-        img: "",
+        img: "Steering.gif",
         competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER]
     },
     {
