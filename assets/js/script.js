@@ -8,7 +8,9 @@ const projects = [
             "Pour un lien vers le code source du projet, il faut d'abord que j'en discute avec mon collégue.",
         link: "",
         img: "MGAProject.gif",
-        competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER]
+        competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER],
+        startDate: "2025-01-08",
+        lastUpdate: "2025-08-02"
     },
     {
         name: "IdleNonogram3D",
@@ -20,7 +22,9 @@ const projects = [
             "Pour l'instant encore au stade de l'alpha",
         link: "https://github.com/Carlier-Maxime/IdleNonogram3D",
         img: "IdleNonogram3D.gif",
-        competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER]
+        competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER],
+        startDate: "2025-03-17",
+        lastUpdate: "2025-03-15"
     },
     {
         name: "Steering",
@@ -30,7 +34,9 @@ const projects = [
             "Cela de manière autonomne en optimisant sont trajet et en évitant d'aller chercher des objets prochent du joueur afin de ne pas géner le joueur sur sa propre récolte.",
         link: "https://github.com/Carlier-Maxime/Steering",
         img: "Steering.gif",
-        competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER]
+        competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER],
+        startDate: "2025-01-07",
+        lastUpdate: "2025-03-15"
     },
     {
         name: "MasqueFitting",
@@ -39,7 +45,9 @@ const projects = [
             "Et de créer des trou sur le masque 3D d'origine au emplacements de marqueurs obtenue.",
         link: "https://github.com/Carlier-Maxime/MasqueFitting",
         img: "MasqueFitting.png",
-        competences: [skill.PYTHON, skill.GIT, skill.PYTORCH, skill.PY_CHARM]
+        competences: [skill.PYTHON, skill.GIT, skill.PYTORCH, skill.PY_CHARM],
+        startDate: "2022-06-28",
+        lastUpdate: "2023-04-05"
     },
     {
         name: "Visage-Generator",
@@ -47,7 +55,9 @@ const projects = [
             "celui-ci sert à générer des visages de synthèse à partir du model FLAME, cela permet de créer des dataset synthétique pour de l'entrainement d'IA",
         link: "https://github.com/Carlier-Maxime/Visage-Generator",
         img: "vgen.png",
-        competences: [skill.PYTHON, skill.GIT, skill.PYTORCH, skill.OPENGL, skill.PY_CHARM]
+        competences: [skill.PYTHON, skill.GIT, skill.PYTORCH, skill.OPENGL, skill.PY_CHARM],
+        startDate: "2022-06-09",
+        lastUpdate: "2025-03-31"
     },
     {
         name: "PixelArtisan",
@@ -59,21 +69,27 @@ const projects = [
             "utile quand on utilise un pack de texture afin que l'image est la bonne apparence.",
         link: "https://github.com/Carlier-Maxime/PixelArtisan",
         img: "PixelArtisan.gif",
-        competences: [skill.JAVA, skill.GIT, skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA, skill.GIT, skill.INTELLIJ_IDEA],
+        startDate: "2022-02-19",
+        lastUpdate: "2025-04-11"
     },
     {
         name: "AnimalBattle",
         description: "Animal Battle est un projet personnel de type jeux vidéo Où le but est d'incarner un animal de son choix et de battre les autre animaux afin d’évoluer et de devenir le plus fort Un peu a la manière d'un jeu pokemon. (Alpha)",
         link: "https://github.com/Carlier-Maxime/AnimalBattle",
         img: "animalBattle.gif",
-        competences: [skill.JAVA, skill.GIT, skill.JAVA_SWING, skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA, skill.GIT, skill.JAVA_SWING, skill.INTELLIJ_IDEA],
+        startDate: "2021-10-21",
+        lastUpdate: "2022-02-04"
     },
     {
         name: "AvatarCreator",
         description: "AvatarCreator est une petite application permettant la création d'avatar. Actuellement vous pouvez juste génerer alèatoirement une 100 éne d'avatars a partir des assets présente. Vous pouvez configurer les paramètre via le fichier setting.txt. il est possible d'en rajouter vous même manuellement.",
         link: "https://github.com/Carlier-Maxime/avatarCreator",
         img: "avatarCreator.png",
-        competences: [skill.CPP, skill.QT, skill.CLION]
+        competences: [skill.CPP, skill.QT, skill.CLION],
+        startDate: "2022-01-14",
+        lastUpdate: "2022-02-07"
     },
     {
         name: "Demineur",
@@ -81,7 +97,9 @@ const projects = [
             "Le but de ce projet est de recréer le célebre jeu le demineur en java avec l'interface graphique swing",
         link: "https://github.com/Carlier-Maxime/Demineur",
         img: "demineur.gif",
-        competences: [skill.JAVA, skill.GIT, skill.JAVA_SWING, skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA, skill.GIT, skill.JAVA_SWING, skill.INTELLIJ_IDEA],
+        startDate: "2021-04-22",
+        lastUpdate: "2022-01-25"
     },
     {
         name: "Labyrinthe",
@@ -93,49 +111,63 @@ const projects = [
             "Le projet fut réaliser en java.",
         link: "https://github.com/Carlier-Maxime/labyrinthe",
         img: "labyrinthe.gif",
-        competences: [skill.JAVA, skill.GIT, skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA, skill.GIT, skill.INTELLIJ_IDEA],
+        startDate: "2021-04-22",
+        lastUpdate: "2021-06-09"
     },
     {
         name: "Interpreter Lisp",
         description: "Un interpréteur du language Lisp, plus précisément la version Scheme. Réalisée en Solo dans le cadre d'un projet de ma première année de Master Informatique",
         link: "https://github.com/Carlier-Maxime/InterpreterLisp",
         img: "interpreter_lisp.gif",
-        competences: [skill.JAVA, skill.SHELL, skill.GIT, skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA, skill.SHELL, skill.GIT, skill.INTELLIJ_IDEA],
+        startDate: "2024-01-14",
+        lastUpdate: "2024-03-23"
     },
     {
         name: "lanceur rayons",
         description: "un lanceur de rayons réalisé en C++ (GPU non pris en charge). fait en groupe de 2 étudiant",
         link: "https://github.com/Carlier-Maxime/lanceur-rayons",
         img: "lanceur-rayons.png",
-        competences: [skill.CPP, skill.GIT, skill.CLION]
+        competences: [skill.CPP, skill.GIT, skill.CLION],
+        startDate: "2023-01-24",
+        lastUpdate: "2023-04-07"
     },
     {
         name: "Puissance4",
         description: "Le célébre jeu Puissance 4 réalisé en C avec la lib SDL2. fait en groupe de 2 étudiant",
         link: "https://github.com/Carlier-Maxime/Puissance4",
         img: "puissance4.gif",
-        competences: [skill.C, skill.SDL, skill.GIT, skill.CLION]
+        competences: [skill.C, skill.SDL, skill.GIT, skill.CLION],
+        startDate: "2022-12-08",
+        lastUpdate: "2023-01-08"
     },
     {
         name: "Portfolio",
         description: "Portfolio avec tous mes projet et des information sur moi.",
         link: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io",
         img: "portfolio.jpg",
-        competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM]
+        competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
+        startDate: "2023-03-18",
+        lastUpdate: "2025-08-28"
     },
     {
         name: "LabyCreator",
         description: "LabyCreator est une petite application java qui permet de créer et résoudre un labyrinthe automatiquement.",
         link: "https://github.com/Carlier-Maxime/labyCreator",
         img: "labyCreator.gif",
-        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT,skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT,skill.INTELLIJ_IDEA],
+        startDate: "2021-11-12",
+        lastUpdate: "2021-12-06"
     },
     {
         name: "DrawIO",
         description: "DrawIO est une petite application java qui permet de dessiner a la souris.",
         link: "https://github.com/Carlier-Maxime/DrawIO",
         img: "drawIO.gif",
-        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT,skill.INTELLIJ_IDEA]
+        competences: [skill.JAVA,skill.JAVA_SWING,skill.GIT,skill.INTELLIJ_IDEA],
+        startDate: "2021-11-29",
+        lastUpdate: "2022-01-04"
     },
     {
         name: "Boto",
@@ -146,7 +178,9 @@ const projects = [
         J'étais bien entendu du coté back-end. (non hébergé)",
         link: "https://github.com/Carlier-Maxime/boto",
         img: "boto.jpg",
-        competences: [skill.PHP,skill.LARAVEL,skill.GIT,skill.SQL,skill.PHP_STORM]
+        competences: [skill.PHP,skill.LARAVEL,skill.GIT,skill.SQL,skill.PHP_STORM],
+        startDate: "2021-12-15",
+        lastUpdate: "2021-12-17"
     },
     {
         name: "Sokoban",
@@ -154,7 +188,9 @@ const projects = [
         fait en groupe de 4 étudiant durant mon DUT info a l'IUT de lens.",
         link: "https://github.com/Carlier-Maxime/sokoban",
         img: "sokoban.gif",
-        competences: [skill.PYTHON,skill.PYQT,skill.GIT,skill.PY_CHARM]
+        competences: [skill.PYTHON,skill.PYQT,skill.GIT,skill.PY_CHARM],
+        startDate: "2021-06-01",
+        lastUpdate: "2021-06-17"
     }
 ];
 
