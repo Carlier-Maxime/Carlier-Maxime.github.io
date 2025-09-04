@@ -194,6 +194,8 @@ const projects = [
     }
 ];
 
+projects.sort((a, b) => new Date(b.lastUpdate) - new Date(a.lastUpdate));
+
 function competenceToHTML(competence) {
     let name = competence.name;
     let link = competence.link;
