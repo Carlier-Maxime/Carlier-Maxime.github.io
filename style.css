@@ -236,8 +236,8 @@ hr.solid {
 }
 
 .control {
+    display: flex;
     bottom: 15%;
-    left: 22.8%;
     position: absolute;
 }
 
@@ -268,7 +268,7 @@ hr.solid {
 }
 
 .btn .code {
-    padding-right: 15px;
+    padding-right: 7px;
     transform: translateX(-10%);
 }
 
@@ -285,7 +285,7 @@ hr.solid {
     font-family: Farsan,cursive;
     font-size: 1.2em;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .btn .github {
@@ -456,4 +456,10 @@ form {
 
 #container {
     padding-bottom: 50px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #bbbbbb;
+    padding: 0px 10px;
 }
