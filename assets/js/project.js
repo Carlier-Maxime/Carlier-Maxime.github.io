@@ -23,8 +23,8 @@ export const projects = [
         link: "https://github.com/Carlier-Maxime/IdleNonogram3D",
         img: "IdleNonogram3D.gif",
         competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER],
-        startDate: "2025-03-17",
-        lastUpdate: "2025-03-15"
+        startDate: "2025-02-26",
+        lastUpdate: "2025-03-17"
     },
     {
         name: "Steering",
@@ -149,7 +149,7 @@ export const projects = [
         img: "portfolio.jpg",
         competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
         startDate: "2023-03-18",
-        lastUpdate: "2025-08-28"
+        lastUpdate: "2025-09-04"
     },
     {
         name: "LabyCreator",
