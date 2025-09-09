@@ -26,4 +26,4 @@ jobs:
         run: |
           git add assets/js/project.js
           git commit -m ":wrench: Update project date" || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${{ secrets.GHA_TOKEN }}@github.com/Carlier-Maxime/Carlier-Maxime.github.io.git
