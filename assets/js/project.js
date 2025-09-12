@@ -149,7 +149,7 @@ export const projects = [
         img: "portfolio.jpg",
         competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
         startDate: "2023-03-18",
-        lastUpdate: "2025-09-09"
+        lastUpdate: "2025-09-12"
     },
     {
         name: "LabyCreator",
