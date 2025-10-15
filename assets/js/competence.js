@@ -80,3 +80,4 @@ export const UBUNTU = addCompetence_("Ubuntu", "https://www.ubuntu-fr.org/", Cat
 export const FEDORA = addCompetence_("Fedora", "https://fedoraproject.org/fr/", Category.OS);
 export const WINDOWS = addCompetence_("Windows", "https://www.microsoft.com/fr-fr/windows/", Category.OS);
 export const CSHARP = addCompetence("CSHARP", "C#", "https://fr.wikipedia.org/wiki/C_Sharp", Category.LANGUAGE);
+export const CUDA = addCompetence_("CUDA", "https://developer.nvidia.com/cuda-zone", Category.LANGUAGE);

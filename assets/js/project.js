@@ -2,6 +2,18 @@ import * as skill from "./competence.js";
 
 export const projects = [
     {
+        name: "cudaMaze",
+        description: "cudaMaze est un projet personnel de génération de labyrinthe rectangle sans cycle avec cuda.\n"+
+            "La génération du labyrinthe se fait en utilisant l'algorithme de kruskal sur GPU.\n"+
+            "La résolution du labyrinthe se fait via un simple BFS sur CPU car plus rapide dans ce cas précis.\n"+
+            "Le GPU est également utilisé pour faire le rendu du labyrinthe pour la sauvegarde au format png.",
+        link: "https://github.com/Carlier-Maxime/cudaMaze",
+        img: "cudaMaze.png",
+        competences: [skill.CUDA, skill.CPP, skill.GIT, skill.CLION],
+        startDate: "2025-05-05",
+        lastUpdate: "2025-10-15"
+    },
+    {
         name: "MGAProject",
         description: "MGA Project est un jeu de type MMORPG inspiré du jeu The Witcher. Celui-ci à était réalisé dans le cadre de ma deuxième année de Master Informatique.\n" +
             "Ce jeu à était réalisé en duo avec Ahmed Zerrouk. Les mécanique sur lesquel j'ai travaillé sont : les statistique, les quêtes, l'inventaire, les items et un peu sur le Material Landscape.\n" +
