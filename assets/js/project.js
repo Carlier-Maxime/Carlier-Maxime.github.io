@@ -36,7 +36,7 @@ export const projects = [
         img: "IdleNonogram3D.gif",
         competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER],
         startDate: "2025-02-26",
-        lastUpdate: "2025-03-17"
+        lastUpdate: "2025-09-15"
     },
     {
         name: "Steering",
@@ -161,7 +161,7 @@ export const projects = [
         img: "portfolio.jpg",
         competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
         startDate: "2023-03-18",
-        lastUpdate: "2025-09-04"
+        lastUpdate: "2025-09-16"
     },
     {
         name: "LabyCreator",
