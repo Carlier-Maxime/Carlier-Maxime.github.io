@@ -6,7 +6,7 @@ export const projects = [
         description: "MGA Project est un jeu de type MMORPG inspiré du jeu The Witcher. Celui-ci à était réalisé dans le cadre de ma deuxième année de Master Informatique.\n" +
             "Ce jeu à était réalisé en duo avec Ahmed Zerrouk. Les mécanique sur lesquel j'ai travaillé sont : les statistique, les quêtes, l'inventaire, les items et un peu sur le Material Landscape.\n" +
             "Pour un lien vers le code source du projet, il faut d'abord que j'en discute avec mon collégue.",
-        link: "",
+        link: "https://gitlab.com/mga6514602/MGAProject",
         img: "MGAProject.gif",
         competences: [skill.UNREAL_ENGINE, skill.CPP, skill.GIT, skill.RIDER],
         startDate: "2025-01-08",
