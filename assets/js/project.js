@@ -36,7 +36,7 @@ export const projects = [
         img: "IdleNonogram3D.gif",
         competences: [skill.UNITY, skill.CSHARP, skill.GIT, skill.RIDER],
         startDate: "2025-02-26",
-        lastUpdate: "2025-09-15"
+        lastUpdate: "2025-12-03"
     },
     {
         name: "Steering",
