@@ -11,7 +11,7 @@ export const projects = [
         img: "cudaMaze.png",
         competences: [skill.CUDA, skill.CPP, skill.GIT, skill.CLION],
         startDate: "2025-05-05",
-        lastUpdate: "2025-10-15"
+        lastUpdate: "2026-01-05"
     },
     {
         name: "MGAProject",
