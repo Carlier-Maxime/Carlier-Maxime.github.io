@@ -2,6 +2,15 @@ import * as skill from "./competence.js";
 
 export const projects = [
     {
+        name: "Portfolio",
+        description: "Portfolio avec tous mes projet et des information sur moi.",
+        link: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io",
+        img: "portfolio.jpg",
+        competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
+        startDate: "2023-03-18",
+        lastUpdate: "2026-01-06"
+    },
+    {
         name: "cudaMaze",
         description: "cudaMaze est un projet personnel de génération de labyrinthe rectangle sans cycle avec cuda.\n"+
             "La génération du labyrinthe se fait en utilisant l'algorithme de kruskal sur GPU.\n"+
@@ -155,15 +164,6 @@ export const projects = [
         lastUpdate: "2023-01-08"
     },
     {
-        name: "Portfolio",
-        description: "Portfolio avec tous mes projet et des information sur moi.",
-        link: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io",
-        img: "portfolio.jpg",
-        competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
-        startDate: "2023-03-18",
-        lastUpdate: "2026-01-06"
-    },
-    {
         name: "LabyCreator",
         description: "LabyCreator est une petite application java qui permet de créer et résoudre un labyrinthe automatiquement.",
         link: "https://github.com/Carlier-Maxime/labyCreator",
@@ -206,4 +206,6 @@ export const projects = [
     }
 ];
 
+let portfolio = projects.shift();
 projects.sort((a, b) => new Date(b.lastUpdate) - new Date(a.lastUpdate));
+projects.push(portfolio);
