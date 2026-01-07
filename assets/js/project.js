@@ -8,7 +8,7 @@ export const projects = [
         img: "portfolio.jpg",
         competences: [skill.HTML,skill.CSS,skill.JS,skill.GIT,skill.WEB_STORM],
         startDate: "2023-03-18",
-        lastUpdate: "2026-01-06"
+        lastUpdate: "2026-01-07"
     },
     {
         name: "cudaMaze",
