@@ -267,7 +267,10 @@ hr.solid {
     gap: 0.5rem;
     margin-top: auto;
     margin-bottom: 1.5rem;
-    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
 }
 
 .badges a {
