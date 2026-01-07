@@ -11,7 +11,7 @@
     --fg-default: white;
 
     --bg-navbar: dodgerblue;
-    --bg-banner: #14b5d0;
+    --bg-banner: #00b5d4;
     --bg-btn: #1a3785;
 
     --bg-surface: color-mix(in srgb, var(--bg-default), white 10%);
@@ -204,38 +204,40 @@ hr.solid {
 }
 
 .titre-dev {
-    background-image: url("./assets/images/dev.jpg");
+    background-image: url('./assets/images/dev.jpg');
     background-color: var(--bg-banner);
-    align-items: center;
-    background-attachment: fixed;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: auto 448px;
-    background-position-x: center;
-    background-position-y: 60px;
+    background-position: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    height: 448px;
     justify-content: center;
+    flex-shrink: 0;
     width: 100%;
+    padding: 10rem 0 8rem 0;
 }
 
 .titre-dev p {
     font-size: var(--font-xl);
+    text-shadow: 2px 2px 4px var(--bg-voidlike);
     background: transparent;
     padding-top: 4rem;
 }
 
 .button-cv {
     background-color: var(--bg-btn);
+    box-shadow: 0 0 1rem 0.3rem var(--bg-btn-border);
     border: 2px solid var(--bg-btn-border);
     border-radius: 50px;
     font-size: var(--font-lg);
     padding: 5px 10px;
     margin: 20px 0;
-    transition: all .3s ease 0s;
+    transition: all .2s ease 0s;
 }
 
 .button-cv:hover {
+    box-shadow: 0 0 2rem 0.1rem var(--bg-btn-border);
     transform: scale(1.3);
 }
 
