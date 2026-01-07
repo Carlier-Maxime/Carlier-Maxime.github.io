@@ -11,7 +11,7 @@ function dateToHTML(name, date) {
 }
 
 function addProject(project) {
-    let container = document.getElementById("container");
+    let container = document.getElementById("projects");
 
     let mediaSrc = `./assets/images/${project['img']}`;
     let mediaHTML;
