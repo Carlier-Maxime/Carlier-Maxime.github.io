@@ -237,8 +237,9 @@ hr.solid {
 }
 
 .button-cv:hover {
-    box-shadow: 0 0 2rem 0.1rem var(--bg-btn-border);
-    transform: scale(1.3);
+    filter: brightness(1.2) hue-rotate(-10deg);
+    box-shadow: 0 0 1rem 0.1rem var(--bg-btn-border);
+    transform: scale(1.05)
 }
 
 #project {
