@@ -1,4 +1,12 @@
 :root {
+    --font-base: 1rem;
+
+    --font-sm: calc(var(--font-base) * 0.85);
+    --font-md: var(--font-base);
+    --font-lg: calc(var(--font-base) * 1.25);
+    --font-xl: calc(var(--font-base) * 2);
+    --font-xxl: calc(var(--font-base) * 4);
+
     --bg-default: #3b3b3b;
     --fg-default: white;
 
@@ -27,6 +35,7 @@
 * {
     background-color: var(--bg-base);
     color: var(--fg-base);
+    font-weight: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +51,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 64px;
+    font-size: var(--font-xxl);
     margin: 20px 0;
 }
 
@@ -73,7 +82,7 @@ h1 {
 }
 
 .navbar-links li {
-    font-size: 1.2rem;
+    font-size: var(--font-lg);
     padding: 0 0.8rem;
     background-color: transparent;
     list-style: none;
@@ -93,7 +102,7 @@ a {
 }
 
 .name {
-    font-size: 1.8rem;
+    font-size: var(--font-xl);
     margin: 0 1.5rem;
     transition: all .3s ease 0s;
 }
@@ -134,7 +143,7 @@ hr.solid {
 .footer .social a {
     border: 1px solid var(--fg-p);
     border-radius: 50%;
-    font-size: 30px;
+    font-size: var(--font-xl);
 }
 
 .footer .social a:hover {
@@ -149,7 +158,7 @@ hr.solid {
 }
 
 .footer ul {
-    font-size: 18px;
+    font-size: var(--font-md);
     line-height: 1.6;
     list-style: none;
     margin: 0;
@@ -171,7 +180,7 @@ hr.solid {
 
 .footer .copyright {
     color: var(--fg-dim);
-    font-size: 15px;
+    font-size: var(--font-sm);
     margin-top: 15px;
     text-align: center;
 }
@@ -188,7 +197,7 @@ hr.solid {
 }
 
 .footer .social p {
-    font-size: 20px;
+    font-size: var(--font-md);
 }
 
 .titre-dev {
@@ -208,23 +217,23 @@ hr.solid {
 }
 
 .titre-dev p {
-    font-size: 260%;
+    font-size: var(--font-xl);
     background: transparent;
-    padding-top: 54px;
+    padding-top: 4rem;
 }
 
 .button-cv {
     background-color: var(--bg-btn);
     border: 2px solid var(--bg-btn-border);
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: var(--font-lg);
     padding: 5px 10px;
-    margin: 25px 0;
+    margin: 20px 0;
     transition: all .3s ease 0s;
 }
 
 .button-cv:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 #project {
@@ -266,7 +275,7 @@ hr.solid {
 }
 
 .project-details h1 {
-    font-size: 3rem;
+    font-size: var(--font-xl);
     margin-top: -0.25rem;
     margin-bottom: 0.1rem;
     text-align: left;
@@ -274,7 +283,7 @@ hr.solid {
 
 .project-details p {
     color: var(--fg-p);
-    font-size: 1rem;
+    font-size: var(--font-md);
     margin-bottom: 2rem;
 }
 
@@ -303,7 +312,8 @@ hr.solid {
     margin: 0 0.15rem;
     padding: 0.2rem 0.8rem;
     border-radius: 1rem;
-    font-size: 1.25rem;
+    font-size: var(--font-md);
+    font-weight: bold;
     border: 1px solid var(--fg-p);
     transition: 0.2s;
     display: inline-block;
@@ -357,7 +367,7 @@ hr.solid {
 .btn span {
     display: inline-block;
     font-family: Farsan,cursive;
-    font-size: 1.2em;
+    font-size: var(--font-md);
     margin: 0;
     padding: 10px 10px;
 }
@@ -470,7 +480,7 @@ form {
     border-radius: 6px;
     width: 100px;
     height: 40px;
-    font-size: 16px;
+    font-size: var(--font-md);
     margin-top: 20px;
     cursor: pointer;
 }
@@ -480,7 +490,7 @@ form {
 }
 
 .date {
-    font-size: 0.9em;
+    font-size: var(--font-sm);
     color: var(--fg-p);
     padding: 0 10px;
 }
