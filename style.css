@@ -1,6 +1,32 @@
+:root {
+    --bg-default: #3b3b3b;
+    --fg-default: white;
+
+    --bg-navbar: dodgerblue;
+    --bg-banner: #14b5d0;
+    --bg-btn: #1a3785;
+
+    --bg-surface: color-mix(in srgb, var(--bg-default), white 10%);
+    --bg-base: var(--bg-default);
+    --bg-dim: color-mix(in srgb, var(--bg-default), black 10%);
+    --bg-deep: color-mix(in srgb, var(--bg-default), black 20%);
+    --bg-abyss: color-mix(in srgb, var(--bg-default), black 50%);
+    --bg-voidlike: color-mix(in srgb, var(--bg-default), black 90%);
+
+    --fg-base: var(--fg-default);
+    --fg-dim: color-mix(in srgb, var(--fg-default), var(--bg-default) 20%);
+    --fg-deep: color-mix(in srgb, var(--fg-default), var(--bg-default) 50%);
+
+    --bg-btn-border: color-mix(in srgb, var(--bg-btn), white 30%);
+
+    --bg-img: var(--bg-voidlike);
+    --bg-footer: var(--bg-deep);
+    --fg-p: var(--fg-deep);
+}
+
 * {
-    background-color: #3b3b3b;
-    color: antiquewhite;
+    background-color: var(--bg-base);
+    color: var(--fg-base);
     margin: 0;
     padding: 0;
 }
@@ -21,7 +47,7 @@ h1 {
 }
 
 .navbar, .navbar * {
-    background-color: dodgerblue;
+    background-color: var(--bg-navbar);
 }
 
 .navbar {
@@ -72,13 +98,13 @@ a {
 }
 
 .empty {
-    background-color: #1a3785;
+    background-color: var(--bg-btn);
     width: 100%;
     height: 60px;
 }
 
 .footer, .footer * {
-    background-color: #2f2f2f;
+    background-color: var(--bg-footer);
 }
 
 .footer {
@@ -87,32 +113,33 @@ a {
 }
 
 hr.solid {
-    border-top: 1px solid #757575;
-    color: #707070;
+    border-top: 1px solid;
+    color: var(--fg-p);
     width: 30%;
     margin: auto;
 }
 
 .footer .social {
-    color: dimgray;
     padding-top: 10px;
     padding-bottom: 5px;
     text-align: center;
 }
 
 .footer .social a {
-    border: 1px solid #c7c7c7;
+    border: 1px solid var(--fg-p);
     border-radius: 50%;
     font-size: 30px;
 }
 
 .footer .social a:hover {
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid var(--fg-base);
+    color: var(--fg-base);
 }
 
 .footer a:hover {
-    color: #ffffff;
+    color: var(--fg-base);
+    transform: scale(1.1);
+    transition: all .3s ease 0s;
 }
 
 .footer ul {
@@ -137,7 +164,7 @@ hr.solid {
 }
 
 .footer .copyright {
-    color: #aaa;
+    color: var(--fg-dim);
     font-size: 15px;
     margin-top: 15px;
     text-align: center;
@@ -160,7 +187,7 @@ hr.solid {
 
 .titre-dev {
     background-image: url("./assets/images/dev.jpg");
-    background-color: #14b5d0;
+    background-color: var(--bg-banner);
     align-items: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -181,9 +208,9 @@ hr.solid {
 }
 
 .button-cv {
-    background-color: #1a3785;
+    background-color: var(--bg-btn);
     background-image: none;
-    border-color: #1a62b0;
+    border-color: var(--bg-btn-border);
     border-radius: 50px;
     cursor: pointer;
     padding: 10px 25px;
@@ -206,7 +233,7 @@ hr.solid {
     display: flex;
     flex-direction: row;
     background-image: none;
-    box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+    box-shadow: var(--bg-surface) 1px 15px 30px 1px;
     border-radius: 1rem;
     min-height: 20rem;
     max-width: 60rem;
@@ -217,7 +244,7 @@ hr.solid {
 
 .media {
     flex: 1;
-    background-color: black;
+    background-color: var(--bg-img);
     display: flex;
     min-width: 0;
     container-type: size;
@@ -226,7 +253,7 @@ hr.solid {
 .media img, .media video {
     image-rendering: high-quality;
     object-fit: contain;
-    background-color: black;
+    background-color: var(--bg-img);
     margin: auto;
     width: 100cqw;
     height: 100cqh;
@@ -248,7 +275,7 @@ hr.solid {
 }
 
 .project-details p {
-    color: #989898;
+    color: var(--fg-p);
     font-size: 1rem;
     margin-bottom: 2rem;
 }
@@ -274,24 +301,24 @@ hr.solid {
 }
 
 .badges a {
-    background: #444;
+    background: var(--bg-surface);
     margin: 0 0.15rem;
     padding: 0.2rem 0.8rem;
     border-radius: 1rem;
     font-size: 1.25rem;
-    border: 1px solid #555;
+    border: 1px solid var(--fg-p);
     transition: 0.2s;
     display: inline-block;
 }
 
 .badges a[href]:hover {
     transform: scale(1.15);
-    background: #013092;
-    color: #fff;
+    background: var(--bg-btn);
+    color: var(--fg-base);
 }
 
 .btn {
-    background-color: #1a3785;
+    background-color: var(--bg-btn);
     background-image: none;
     border: none;
     outline: none;
@@ -310,7 +337,7 @@ hr.solid {
 }
 
 .btn .code, .logo-github {
-    background-color: #4b4b4b;
+    background-color: var(--bg-surface);
     background-image: none;
     border: 0;
     margin: 0;
@@ -346,15 +373,15 @@ hr.solid {
 .about {
     margin: 50px auto;
     width: 75%;
-    background-color: #2f2f2f;
-    box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+    background-color: var(--bg-dim);
+    box-shadow: var(--bg-surface) 1px 15px 30px 1px;
     border-radius: 16px;
     padding: 20px;
 }
 
 .about * {
     margin: 10px 0;
-    background-color: #2f2f2f;
+    background-color: var(--bg-dim);
 }
 
 .about p {
@@ -373,7 +400,7 @@ hr.solid {
 }
 
 .tab thead * {
-    background-color: #575757;
+    background-color: var(--bg-surface);
     text-align: center;
     padding: 8px;
     font-weight: bold;
@@ -384,20 +411,20 @@ hr.solid {
 }
 
 .tab tbody td:nth-child(even), .tab tbody td:nth-child(even) * {
-    background-color: #3e3e3e;
+    background-color: var(--bg-dim);
 }
 
 .tab tbody td:nth-child(odd), .tab tbody td:nth-child(odd) * {
-    background-color: #828282;
+    background-color: var(--bg-base);
 }
 
 .tabContainer, .tabContainer * {
-    background-color: #282828;
+    background-color: var(--bg-abyss);
 }
 
 .contact {
     margin: 50px auto;
-    box-shadow: rgb(96, 104, 108) 1px 15px 30px 1px;
+    box-shadow: var(--bg-surface) 1px 15px 30px 1px;
     padding: 20px;
 }
 
@@ -407,12 +434,12 @@ hr.solid {
 
 .contact, .contact * {
     width: 70%;
-    background-color: #2d2d2d;
+    background-color: var(--bg-deep);
     border-radius: 16px;
 }
 
 .contact form input {
-    background-color: #464646;
+    background-color: var(--bg-surface);
     border-radius: 4px;
     margin: 10px 0;
     padding: 10px;
@@ -440,8 +467,8 @@ form {
 }
 
 #submit {
-    background-color: #1a62b0;
-    border-color: #1a3785;
+    background-color: var(--bg-banner);
+    border-color: var(--bg-btn);
     border-radius: 6px;
     width: 100px;
     height: 40px;
@@ -456,6 +483,6 @@ form {
 
 .date {
     font-size: 0.9em;
-    color: #bbbbbb;
+    color: var(--fg-p);
     padding: 0 10px;
 }
