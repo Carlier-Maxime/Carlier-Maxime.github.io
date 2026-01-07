@@ -272,18 +272,19 @@ hr.solid {
 
 .badges a {
     background: #444;
+    margin: 0 0.15rem;
     padding: 0.2rem 0.8rem;
     border-radius: 1rem;
     font-size: 1.25rem;
     border: 1px solid #555;
-    margin-top: auto;
     transition: 0.2s;
+    display: inline-block;
 }
 
 .badges a[href]:hover {
-    font-size: 2rem;
+    transform: scale(1.15);
     background: #013092;
-    color: #000;
+    color: #fff;
 }
 
 .btn {
