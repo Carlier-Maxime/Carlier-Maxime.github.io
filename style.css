@@ -67,19 +67,23 @@ h1 {
 
 .navbar-links ul {
     display: flex;
-    margin: 0;
+    align-items: center;
+    height: 100%;
     padding: 0;
 }
 
 .navbar-links li {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0 0.8rem;
+    background-color: transparent;
     list-style: none;
     transition: all .3s ease 0s;
 }
 
 .navbar-links li:hover {
-    font-size: 1.5rem;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all .3s ease 0s;
 }
 
 a {
@@ -90,11 +94,13 @@ a {
 
 .name {
     font-size: 1.8rem;
-    margin: .5rem;
+    margin: 0 1.5rem;
+    transition: all .3s ease 0s;
 }
 
 .name:hover {
-    font-size: 2.0rem;
+    transform: scale(1.1);
+    transition: all .3s ease 0s;
 }
 
 .empty {
