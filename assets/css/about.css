@@ -1,0 +1,51 @@
+.about {
+    margin: var(--space-xxl) auto;
+    width: 95%;
+    max-width: 80rem;
+    background-color: var(--bg-dim);
+    box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-sm) var(--bg-surface);
+    border-radius: var(--radius-xxl);
+    padding: var(--space-xl);
+}
+
+.about * {
+    margin: var(--space-xxs) 0;
+    background-color: var(--bg-dim);
+}
+
+.about p {
+    margin: var(--space-lg) 0;
+}
+
+.about h2 {
+    padding-top: var(--space-lg);
+}
+
+.tab {
+    margin: var(--space-lg) auto;
+    max-width: 80%;
+    border-collapse: collapse;
+}
+
+.tab thead * {
+    background-color: var(--bg-surface);
+    text-align: center;
+    padding: var(--space-xs);
+    font-weight: bold;
+}
+
+.tab tbody * {
+    padding: var(--space-xs);
+}
+
+.tab tbody td:nth-child(even), .tab tbody td:nth-child(even) * {
+    background-color: var(--bg-dim);
+}
+
+.tab tbody td:nth-child(odd), .tab tbody td:nth-child(odd) * {
+    background-color: var(--bg-base);
+}
+
+.tabContainer, .tabContainer * {
+    background-color: var(--bg-abyss);
+}

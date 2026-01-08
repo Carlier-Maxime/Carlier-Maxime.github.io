@@ -1,11 +1,9 @@
-@import url("assets/css/default.css");
-
 .titre-dev {
     box-sizing: content-box;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-image: url('./assets/images/dev.jpg');
+    background-image: url('/assets/images/dev.jpg');
     background-color: var(--bg-banner);
     background-size: contain;
     background-repeat: no-repeat;
@@ -194,114 +192,6 @@
     font-weight: bolder;
     z-index: 3;
     background: transparent;
-}
-
-.about {
-    margin: var(--space-xxl) auto;
-    width: 95%;
-    max-width: 80rem;
-    background-color: var(--bg-dim);
-    box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-sm) var(--bg-surface);
-    border-radius: var(--radius-xxl);
-    padding: var(--space-xl);
-}
-
-.about * {
-    margin: var(--space-xxs) 0;
-    background-color: var(--bg-dim);
-}
-
-.about p {
-    margin: var(--space-lg) 0;
-}
-
-.about h2 {
-    padding-top: var(--space-lg);
-}
-
-.tab {
-    margin: var(--space-lg) auto;
-    max-width: 80%;
-    border-collapse: collapse;
-}
-
-.tab thead * {
-    background-color: var(--bg-surface);
-    text-align: center;
-    padding: var(--space-xs);
-    font-weight: bold;
-}
-
-.tab tbody * {
-    padding: var(--space-xs);
-}
-
-.tab tbody td:nth-child(even), .tab tbody td:nth-child(even) * {
-    background-color: var(--bg-dim);
-}
-
-.tab tbody td:nth-child(odd), .tab tbody td:nth-child(odd) * {
-    background-color: var(--bg-base);
-}
-
-.tabContainer, .tabContainer * {
-    background-color: var(--bg-abyss);
-}
-
-.contact {
-    margin: var(--space-xxl) auto;
-    box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-md) var(--bg-surface);
-    padding: var(--space-xxl);
-    width: 95%;
-    max-width: 80rem;
-}
-
-.contact h1 {
-    width: 100%;
-}
-
-.contact, .contact * {
-    background-color: var(--bg-deep);
-    border-radius: var(--radius-xxl);
-}
-
-.contact form input {
-    background-color: var(--bg-surface);
-    border-radius: var(--radius-md);
-    margin: var(--space-xs) 0;
-    padding: var(--space-xs);
-    box-sizing: border-box;
-}
-
-form {
-    margin: var(--space-xl) auto;
-    width: 100%;
-}
-
-#name, #email, #message {
-    width: 100%;
-    box-sizing: border-box;
-    font-size: var(--font-md);
-}
-
-#name, #email {
-    height: var(--space-xl);
-}
-
-#message {
-    height: calc(var(--font-md) * 16);
-    resize: vertical;
-}
-
-#submit {
-    background-color: var(--bg-banner);
-    border-color: var(--bg-btn);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xxs) var(--space-md);
-    font-size: var(--font-lg);
-    text-align: center;
-    margin-top: var(--space-lg);
-    cursor: pointer;
 }
 
 .date {
