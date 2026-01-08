@@ -4,7 +4,9 @@
     <body>
         {% include navbar.html %}
         <div class="content-wrapper">
-            {{ content }}
+            <main>
+                {{ content }}
+            </main>
             {% include footer.html %}
         </div>
         {% if page.js %}
