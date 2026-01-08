@@ -16,13 +16,13 @@
     width: 100%;
     padding: var(--space-xxl) 0 var(--space-lg) 0;
     min-height: 20dvw;
-}
 
-.titre-dev p {
-    font-size: var(--font-xl);
-    text-shadow: 2px 2px var(--softness-sm) var(--bg-voidlike);
-    background: transparent;
-    padding-top: var(--space-xxl);
+    p {
+        font-size: var(--font-xl);
+        text-shadow: 2px 2px var(--softness-sm) var(--bg-voidlike);
+        background: transparent;
+        padding-top: var(--space-xxl);
+    }
 }
 
 .button-cv {
@@ -34,12 +34,12 @@
     padding: var(--space-xxs) var(--space-sm);
     margin: var(--space-lg) 0;
     transition: all .2s ease 0s;
-}
 
-.button-cv:hover {
-    filter: brightness(1.2) hue-rotate(-10deg);
-    box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-sm) var(--bg-btn-border);
-    transform: scale(1.05)
+    &:hover {
+        filter: brightness(1.2) hue-rotate(-10deg);
+        box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-sm) var(--bg-btn-border);
+        transform: scale(1.05)
+    }
 }
 
 .projects-wrapper {
@@ -76,15 +76,15 @@
     display: flex;
     min-width: 0;
     container-type: size;
-}
 
-.media img, .media video {
-    image-rendering: high-quality;
-    object-fit: contain;
-    background-color: var(--bg-img);
-    margin: auto;
-    width: 100cqw;
-    height: 100cqh;
+    img, video {
+        image-rendering: high-quality;
+        object-fit: contain;
+        background-color: var(--bg-img);
+        margin: auto;
+        width: 100cqw;
+        height: 100cqh;
+    }
 }
 
 .project-details {
@@ -93,19 +93,19 @@
     flex-direction: column;
     overflow: hidden;
     padding: var(--space-md);
-}
 
-.project-details h1 {
-    font-size: var(--font-xl);
-    margin-top: calc(var(--space-xxs) * -1);
-    margin-bottom: var(--space-xxs);
-    text-align: left;
-}
+    h1 {
+        font-size: var(--font-xl);
+        margin-top: calc(var(--space-xxs) * -1);
+        margin-bottom: var(--space-xxs);
+        text-align: left;
+    }
 
-.project-details p {
-    color: var(--fg-p);
-    font-size: var(--font-md);
-    margin-bottom: var(--space-lg);
+    p {
+        color: var(--fg-p);
+        font-size: var(--font-md);
+        margin-bottom: var(--space-lg);
+    }
 }
 
 .control {
@@ -126,23 +126,23 @@
     justify-items: center;
     align-items: center;
     width: 100%;
-}
 
-.badges a {
-    background: var(--bg-surface);
-    padding: var(--space-xxs) var(--space-sm);
-    border-radius: var(--radius-pill);
-    font-size: var(--font-md);
-    font-weight: bold;
-    border: 1px solid var(--fg-p);
-    transition: 0.2s;
-    display: inline-block;
-}
+    a {
+        background: var(--bg-surface);
+        padding: var(--space-xxs) var(--space-sm);
+        border-radius: var(--radius-pill);
+        font-size: var(--font-md);
+        font-weight: bold;
+        border: 1px solid var(--fg-p);
+        transition: 0.2s;
+        display: inline-block;
 
-.badges a[href]:hover {
-    transform: scale(1.15);
-    background: var(--bg-btn);
-    color: var(--fg-base);
+        &[href]:hover {
+            transform: scale(1.15);
+            background: var(--bg-btn);
+            color: var(--fg-base);
+        }
+    }
 }
 
 .btn {
@@ -155,43 +155,43 @@
     overflow: hidden;
     position: relative;
     transform: translateY(0);
-}
 
-.btn a {
-    color: inherit;
-    background: transparent;
-}
+    a {
+        color: inherit;
+        background: transparent;
+    }
 
-.btn .code, .logo-github {
-    background-color: var(--bg-surface);
-    background-image: none;
-    border: 0;
-}
+    .code, .logo-github {
+        background-color: var(--bg-surface);
+        background-image: none;
+        border: 0;
+    }
 
-.btn .code {
-    padding-right: var(--space-xxs);
-    transform: translateX(-10%);
-}
+    .code {
+        padding-right: var(--space-xxs);
+        transform: translateX(-10%);
+    }
 
-.btn .logo-github {
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateX(-100%);
-    z-index: 1;
-}
+    .logo-github {
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%);
+        z-index: 1;
+    }
 
-.btn span {
-    display: inline-block;
-    font-family: Farsan,cursive;
-    font-size: var(--font-md);
-    padding: var(--space-xs);
-}
+    span {
+        display: inline-block;
+        font-family: Farsan,cursive;
+        font-size: var(--font-md);
+        padding: var(--space-xs);
+    }
 
-.btn .github {
-    font-weight: bolder;
-    z-index: 3;
-    background: transparent;
+    .github {
+        font-weight: bolder;
+        z-index: 3;
+        background: transparent;
+    }
 }
 
 .date {
