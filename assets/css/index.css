@@ -182,7 +182,6 @@
 
     span {
         display: inline-block;
-        font-family: Farsan,cursive;
         font-size: var(--font-md);
         padding: var(--space-xs);
     }
