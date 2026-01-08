@@ -1,56 +1,10 @@
 @import url("./assets/css/variables.css");
 @import url("assets/css/init.css");
+@import url("assets/css/navbar.css");
 
 h1 {
     text-align: center;
     font-size: var(--font-xxl);
-}
-
-
-.navbar {
-    align-items: center;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-shrink: 0;
-    z-index: 100;
-    background-color: var(--bg-navbar);
-}
-
-.navbar-links {
-    margin: var(--space-sm) 0;
-}
-
-.navbar-links ul {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-links li {
-    font-size: var(--font-lg);
-    padding: 0 var(--space-sm);
-    background-color: transparent;
-    list-style: none;
-    transition: all .3s ease 0s;
-}
-
-.navbar-links li:hover {
-    z-index: 1;
-    transform: scale(1.2);
-    transition: all .3s ease 0s;
-}
-
-.name {
-    font-size: var(--font-xl);
-    margin: 0 var(--space-lg);
-    transition: all .3s ease 0s;
-}
-
-.name:hover {
-    transform: scale(1.1);
-    transition: all .3s ease 0s;
 }
 
 .content-wrapper {
