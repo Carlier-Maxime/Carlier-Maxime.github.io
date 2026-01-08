@@ -4,7 +4,6 @@
 h1 {
     text-align: center;
     font-size: var(--font-xxl);
-    margin: var(--space-md) 0;
 }
 
 .navbar, .navbar * {
@@ -73,15 +72,15 @@ main {
 }
 
 .footer {
-    padding: var(--space-xxs) 0;
     margin-top: auto;
     width: 100%;
 }
 
 hr.solid {
     border-top: 1px solid;
+    margin: var(--space-xxs) auto;
     width: 30%;
-    margin: auto;
+    color: var(--fg-abyss);
 }
 
 .footer .social {
@@ -131,6 +130,9 @@ hr.solid {
 
 .titre-dev {
     box-sizing: content-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-image: url('./assets/images/dev.jpg');
     background-color: var(--bg-banner);
     background-size: contain;
@@ -168,6 +170,14 @@ hr.solid {
     filter: brightness(1.2) hue-rotate(-10deg);
     box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-sm) var(--bg-btn-border);
     transform: scale(1.05)
+}
+
+.projects-wrapper {
+    padding-top: 1px;
+    --b: var(--shadow-blur-md);
+    box-shadow: 0 calc(var(--b) * -0.5) var(--b) calc(var(--b) * -0.5) var(--bg-voidlike);
+    position: relative;
+    z-index: 10;
 }
 
 #projects {
