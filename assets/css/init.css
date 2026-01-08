@@ -6,16 +6,9 @@
     color: inherit;
 }
 
-*:not([class*="fa-"]) {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-weight: normal;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    height: 100dvh;
     line-height: 1.5;
     background-color: var(--bg-default);
     color: var(--fg-default);
