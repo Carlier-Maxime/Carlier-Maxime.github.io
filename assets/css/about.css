@@ -23,8 +23,13 @@
 
 .tab {
     margin: var(--space-lg) auto;
-    max-width: 80%;
     border-collapse: collapse;
+    max-width: 80%;
+
+
+    th, td {
+        white-space: nowrap;
+    }
 
     thead * {
         background-color: var(--bg-surface);
@@ -51,5 +56,9 @@
 .tabContainer {
     &, & * {
         background-color: var(--bg-abyss);
+    }
+
+    @media (orientation: portrait) {
+        overflow-x: auto;
     }
 }

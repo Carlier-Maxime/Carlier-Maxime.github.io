@@ -32,6 +32,13 @@ h1 {
 hr.solid {
     border-top: 1px solid;
     margin: var(--space-xxs) auto;
-    width: 30%;
     color: var(--fg-abyss);
+
+    @media (orientation: landscape) {
+        width: 30%;
+    }
+
+    @media (orientation: portrait) {
+        width: 40%;
+    }
 }

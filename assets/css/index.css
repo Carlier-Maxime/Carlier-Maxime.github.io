@@ -59,7 +59,6 @@
 
 #project {
     display: flex;
-    flex-direction: row;
     background-image: none;
     box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-lg) var(--bg-surface);
     border-radius: var(--space-md);
@@ -68,22 +67,40 @@
     width: 95%;
     margin: var(--space-lg) auto;
     overflow: hidden;
+
+    @media (orientation: landscape) {
+        flex-direction: row;
+    }
+
+    @media (orientation: portrait) {
+        flex-direction: column-reverse;
+    }
 }
 
 .media {
     flex: 1;
     background-color: var(--bg-img);
     display: flex;
-    min-width: 0;
-    container-type: size;
+
+    @media (orientation: landscape) {
+        min-width: 0;
+        container-type: size;
+    }
+
+    @media (orientation: portrait) {
+        min-height: 0;
+    }
 
     img, video {
         image-rendering: high-quality;
         object-fit: contain;
         background-color: var(--bg-img);
         margin: auto;
-        width: 100cqw;
-        height: 100cqh;
+
+        @media (orientation: landscape) {
+            width: 100cqw;
+            height: 100cqh;
+        }
     }
 }
 
@@ -170,6 +187,10 @@
     .code {
         padding-right: var(--space-xxs);
         transform: translateX(-10%);
+
+        @media (orientation: portrait) {
+            display: none;
+        }
     }
 
     .logo-github {
