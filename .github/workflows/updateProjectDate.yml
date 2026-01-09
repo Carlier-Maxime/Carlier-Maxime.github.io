@@ -2,7 +2,7 @@ name: Update project date
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */8 * * *'
 
 jobs:
   update:
@@ -26,6 +26,6 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add assets/js/project.js
+          git add _projects/*.md
           git commit -m ":wrench: Update project date" || echo "No changes to commit"
           git push
