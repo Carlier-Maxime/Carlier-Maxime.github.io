@@ -1,6 +1,5 @@
 ---
 layout: default
-js: "about.js"
 css: "about.css"
 ---
 
@@ -37,12 +36,66 @@ css: "about.css"
                 <thead>
                 <tr>
                     <th>Langages</th>
-                    <th>Logiciels</th>
+                    <th>Software</th>
                     <th>Frameworks</th>
-                    <th>Systèmes d'exploitation</th>
+                    <th>OS</th>
                 </tr>
                 </thead>
                 <tbody id="tabCompBody">
+                    {% assign languages = "" | split: "," %}
+                    {% assign softwares = "" | split: "," %}
+                    {% assign frameworks = "" | split: "," %}
+                    {% assign oss = "" | split: "," %}
+
+                    {% for comp_entry in site.data.competences %}
+                        {% assign comp = comp_entry[1] %}
+                        {% if comp.category == "Language" %}
+                            {% assign languages = languages | push: comp %}
+                        {% elsif comp.category == "Software" %}
+                            {% assign softwares = softwares | push: comp %}
+                        {% elsif comp.category == "Framework" %}
+                            {% assign frameworks = frameworks | push: comp %}
+                        {% elsif comp.category == "OS" %}
+                            {% assign oss = oss | push: comp %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% assign size_lang = languages.size %}
+                    {% assign size_soft = softwares.size %}
+                    {% assign size_frame = frameworks.size %}
+                    {% assign size_os = oss.size %}
+
+                    {% assign max_size = size_lang %}
+                    {% if size_soft > max_size %}{% assign max_size = size_soft %}{% endif %}
+                    {% if size_frame > max_size %}{% assign max_size = size_frame %}{% endif %}
+                    {% if size_os > max_size %}{% assign max_size = size_os %}{% endif %}
+
+                    {% for i in (0..max_size) %}
+                        {% if i < max_size %}
+                        <tr>
+                            <td>
+                                {% if i < size_lang %}
+                                    <a href="{{ languages[i].link }}" target="_blank">{{ languages[i].name }}</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if i < size_soft %}
+                                    <a href="{{ softwares[i].link }}" target="_blank">{{ softwares[i].name }}</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if i < size_frame %}
+                                    <a href="{{ frameworks[i].link }}" target="_blank">{{ frameworks[i].name }}</a>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if i < size_os %}
+                                    <a href="{{ oss[i].link }}" target="_blank">{{ oss[i].name }}</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
                 </tbody>
             </table>
         </li>

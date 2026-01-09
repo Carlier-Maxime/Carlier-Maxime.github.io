@@ -1,0 +1,33 @@
+<div id="project">
+    <div class="project-details">
+        <h1>{{ include.project.name }}</h1>
+        <p class="description">{{ include.project.description }}</p>
+        <div class="badges">
+            {% for comp_key in include.project.competences %}
+                {% assign comp = site.data.competences[comp_key] %}
+                {% if comp %}
+                    <a {% if comp.link %}href="{{ comp.link }}"{% endif %}> {{ comp.name }} </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="control">
+            <div class="date"><span class="date-name">Date de début</span><br><span class="date">{{ include.project.startDate }}</span></div>
+            <button class="btn">
+                <a href="{{ include.project.link }}">
+                    <span class="code">Code</span>
+                    <span class="logo-github"><i class="fa-brands fa-github"></i></span>
+                    <span class="github">Github</span>
+                </a>
+            </button>
+            <div class="date"><span class="date-name">Dernière MAJ</span><br><span class="date">{{ include.project.lastUpdate }}</span></div>
+        </div>
+    </div>
+    <div class="media">
+        {% assign mediaSrc = include.project.img | prepend: "./assets/images/" %}
+        {% if include.project.img contains '.webm' %}
+            <video src="{{ mediaSrc }}" autoplay loop muted playsinline></video>
+        {% else %}
+            <img src="{{ mediaSrc }}" alt="aperçu">
+        {% endif %}
+    </div>
+</div>

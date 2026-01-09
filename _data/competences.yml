@@ -1,0 +1,176 @@
+PHP:
+  name: PHP
+  link: https://www.php.net/
+  category: Language
+Java:
+  name: Java
+  link: https://www.oracle.com/fr/java/
+  category: Language
+HTML:
+  name: HTML
+  link: https://html.spec.whatwg.org/multipage/
+  category: Language
+CSS:
+  name: CSS
+  link: https://www.w3.org/Style/CSS/
+  category: Language
+Angular:
+  name: Angular
+  link: https://angular.io/
+  category: Framework
+TS:
+  name: TypeScript
+  link: https://www.typescriptlang.org/
+  category: Language
+Git:
+  name: Git
+  link: https://git-scm.com/
+  category: Software
+JavaSwing:
+  name: JavaSwing
+  link: https://docs.oracle.com/javase/6/docs/technotes/guides/swing/
+  category: Framework
+Laravel:
+  name: Laravel
+  link: https://laravel.com/
+  category: Framework
+SQL:
+  name: SQL
+  link: https://sql.sh/
+  category: Language
+Python:
+  name: Python
+  link: https://www.python.org/
+  category: Language
+PyQt:
+  name: PyQt
+  link: https://wiki.python.org/moin/PyQt
+  category: Framework
+C:
+  name: C
+  link: https://fr.wikipedia.org/wiki/C_(langage)
+  category: Language
+SDL:
+  name: SDL
+  link: https://www.libsdl.org/
+  category: Framework
+CPlusPlus:
+  name: C++
+  link: https://fr.wikipedia.org/wiki/C%2B%2B
+  category: Language
+Shell:
+  name: Shell
+  link: https://fr.wikipedia.org/wiki/Shell_Unix
+  category: Language
+Bash:
+  name: Bash
+  link: https://www.gnu.org/software/bash/
+  category: Language
+JS:
+  name: JavaScript
+  link: https://developer.mozilla.org/fr/docs/Web/JavaScript
+  category: Language
+Rider:
+  name: Rider
+  link: https://www.jetbrains.com/fr-fr/rider/
+  category: Software
+CLion:
+  name: CLion
+  link: https://www.jetbrains.com/fr-fr/clion/
+  category: Software
+Intellij_IDEA:
+  name: Intellij IDEA
+  link: https://www.jetbrains.com/idea/
+  category: Software
+PhpStorm:
+  name: PhpStorm
+  link: https://www.jetbrains.com/fr-fr/phpstorm/
+  category: Software
+PyCharm:
+  name: PyCharm
+  link: https://www.jetbrains.com/fr-fr/pycharm/
+  category: Software
+WebStorm:
+  name: WebStorm
+  link: https://www.jetbrains.com/fr-fr/webstorm/
+  category: Software
+VS_Code:
+  name: VS Code
+  link: https://code.visualstudio.com/
+  category: Software
+VisualStudio:
+  name: Visual Studio
+  link: https://visualstudio.microsoft.com/fr/
+  category: Software
+NotepadPlusPlus:
+  name: Notepad++
+  link: https://notepad-plus-plus.org/
+  category: Software
+UnrealEngine:
+  name: Unreal Engine
+  link: https://www.unrealengine.com/fr
+  category: Software
+Unity:
+  name: Unity
+  link: https://unity.com/fr
+  category: Software
+Qt:
+  name: Qt
+  link: https://www.qt.io/
+  category: Framework
+Bootstrap:
+  name: Bootstrap
+  link: https://getbootstrap.com/
+  category: Framework
+Tensorflow:
+  name: Tensorflow
+  link: https://www.tensorflow.org/?hl=fr
+  category: Framework
+Keras:
+  name: Keras
+  link: https://keras.io/
+  category: Framework
+PyTorch:
+  name: PyTorch
+  link: https://pytorch.org/
+  category: Framework
+OpenGL:
+  name: OpenGL
+  link: https://www.opengl.org/
+  category: Framework
+GLFW:
+  name: GLFW
+  link: https://www.glfw.org/
+  category: Framework
+GLM:
+  name: GLM
+  link: https://glm.g-truc.net/0.9.9/index.html
+  category: Framework
+Vulkan:
+  name: Vulkan
+  link: https://www.vulkan.org/
+  category: Framework
+Manjaro:
+  name: Manjaro (KDE Plasma)
+  link: https://manjaro.org/products/download/x86
+  category: OS
+Ubuntu:
+  name: Ubuntu
+  link: https://www.ubuntu-fr.org/
+  category: OS
+Fedora:
+  name: Fedora
+  link: https://fedoraproject.org/fr/
+  category: OS
+Windows:
+  name: Windows
+  link: https://www.microsoft.com/fr-fr/windows/
+  category: OS
+CSHARP:
+  name: C#
+  link: https://fr.wikipedia.org/wiki/C_Sharp
+  category: Language
+CUDA:
+  name: CUDA
+  link: https://developer.nvidia.com/cuda-zone
+  category: Language

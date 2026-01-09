@@ -1,6 +1,5 @@
 ---
 layout: default
-js: "script.js"
 css: "index.css"
 ---
 
@@ -12,5 +11,17 @@ css: "index.css"
     <hr class="solid">
     <h1>Project</h1>
     <div id="projects">
+        {% assign projects = site.projects | sort: "lastUpdate" | reverse %}
+        {% assign portfolio = "" %}
+        {% for project in projects %}
+            {% if project.name == "Portfolio" %}
+                {% assign portfolio = project %}
+            {% else %}
+                {% include project-card.html project=project %}
+            {% endif %}
+        {% endfor %}
+        {% if portfolio != "" %}
+            {% include project-card.html project=portfolio %}
+        {% endif %}
     </div>
 </div>
