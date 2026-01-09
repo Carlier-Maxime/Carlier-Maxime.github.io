@@ -1,0 +1,25 @@
+title: Portfolio - Maxime Carlier
+firstname: Maxime
+lastname: Carlier
+email: 28m06c02@gmail.com
+phone: "07 84 17 26 58"
+country: France
+profession: Game Developer
+baseurl: ""
+url: "https://carlier-maxime.github.io/"
+
+start_year: 2023
+birth_date: 2002-06-28
+
+social:
+  github: Carlier-Maxime
+  linkedin: maxime-carlier-6b9840226
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .bundle/

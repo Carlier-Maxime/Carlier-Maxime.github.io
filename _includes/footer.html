@@ -1,16 +1,16 @@
 <section class="footer">
     <hr class="solid">
     <div class="social">
-        <a href="https://www.linkedin.com/in/maxime-carlier-6b9840226/" class="fa fa-linkedin-square" aria-label="Mon Profile LinkedIn"></a>
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" class="fa fa-linkedin-square" aria-label="Mon Profil LinkedIn"></a>
         <p>•</p>
-        <a href="mailto:28m06c02@gmail.com" class="fa fa-envelope" aria-label="Mon Address Mail"></a>
+        <a href="mailto:{{ site.email }}" class="fa fa-envelope" aria-label="Mon Adresse Mail"></a>
         <p>•</p>
-        <a href="https://github.com/Carlier-Maxime" class="fa fa-github-square" aria-label="Mon Profile Github"></a>
+        <a href="https://github.com/{{ site.social.github }}" class="fa fa-github-square" aria-label="Mon Profil Github"></a>
     </div>
     <div>
-        <a href="mailto:28m06c02@gmail.com" class="fa fa-envelope" aria-hidden="true"> 28m06c02@gmail.com</a>
+        <a href="mailto:{{ site.email }}" class="fa fa-envelope" aria-hidden="true"> {{ site.email }}</a>
         <p>•</p>
-        <a href="tel:+33784172658" class="fa fa-phone" aria-label="Mon Télèphone"> 07 84 17 26 58</a>
+        <a href="tel:+33{{ site.phone | remove: ' ' }}" class="fa fa-phone" aria-label="Mon Téléphone"> {{ site.phone }}</a>
     </div>
-    <p class="copyright"> Copyright {{ "now" | date: "%Y" }} © Maxime Carlier</p>
+    <p class="copyright"> Copyright {{ site.start_year }} - {{ "now" | date: "%Y" }} © {{ site.firstname }} {{ site.lastname }}</p>
 </section>

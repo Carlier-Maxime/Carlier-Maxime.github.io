@@ -19,11 +19,18 @@ css: "about.css"
         Informations personnelles :
     </p>
     <ul>
-        <li>Nom : Carlier</li>
-        <li>Prénom : Maxime</li>
-        <li>Âge : 22 ans</li>
-        <li>Pays : France</li>
-        <li>Profession : Étudiant en Master informatique</li>
+        <li>Nom : {{ site.lastname }}</li>
+        <li>Prénom : {{ site.firstname }}</li>
+        <li>
+            {% assign birth_date = site.birth_date | date: "%s" %}
+            {% assign now = "now" | date: "%s" %}
+            {% assign seconds_per_year = 31536000 %}
+            {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
+
+            Âge: {{ age }} ans.
+        </li>
+        <li>Pays : {{ site.country }}</li>
+        <li>Profession : {{ site.profession }}</li>
         <li class="tabContainer">
             Compétences :
             <table class="tab">
@@ -40,7 +47,7 @@ css: "about.css"
             </table>
         </li>
         <li>Projets : Pour avoir la liste des projets, retournez à la page d'accueil.</li>
-        <li>Email : <a href="mailto:28m06c02@gmail.com">28m06c02@gmail.com</a></li>
+        <li>Email : <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         <li>Téléphone : 07 84 17 26 58</li>
     </ul>
 
