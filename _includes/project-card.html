@@ -12,13 +12,10 @@
         </div>
         <div class="control">
             <div class="date"><span class="date-name">Date de début</span><br><span class="date">{{ include.project.startDate }}</span></div>
-            <button class="btn">
-                <a href="{{ include.project.link }}">
-                    <span class="code">Code</span>
-                    <span class="logo-github"><i class="fa-brands fa-github"></i></span>
-                    <span class="github">Github</span>
-                </a>
-            </button>
+            <a class="btn-source" href="{{ include.project.link }}">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
             <div class="date"><span class="date-name">Dernière MAJ</span><br><span class="date">{{ include.project.lastUpdate }}</span></div>
         </div>
     </div>
