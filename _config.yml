@@ -23,6 +23,8 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
   - .bundle/
+  - .idea/
+  - .github/
 
 collections:
   projects:
