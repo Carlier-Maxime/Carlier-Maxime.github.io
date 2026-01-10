@@ -19,12 +19,14 @@
             <div class="date"><span class="date-name">Dernière MAJ</span><br><span class="date">{{ include.project.lastUpdate }}</span></div>
         </div>
     </div>
-    <div class="media">
-        {% assign mediaSrc = include.project.img | prepend: "./assets/images/" %}
-        {% if include.project.img contains '.webm' %}
-            <video src="{{ mediaSrc }}" autoplay loop muted playsinline></video>
+    <div class="media-container">
+        {% assign mediaSrc = include.project.media | prepend: "./assets/media/" %}
+        {% if include.project.media contains '.webm' %}
+            <canvas class="bg-blur" aria-hidden="true"></canvas>
+            <video class="main-media" src="{{ mediaSrc }}" autoplay loop muted playsinline></video>
         {% else %}
-            <img src="{{ mediaSrc }}" alt="aperçu">
+            <img class="bg-blur" src="{{ mediaSrc }}" aria-hidden="true" alt="arrière plan flou pour les bords de l'aperçu">
+            <img class="main-media" src="{{ mediaSrc }}" alt="aperçu">
         {% endif %}
     </div>
 </div>

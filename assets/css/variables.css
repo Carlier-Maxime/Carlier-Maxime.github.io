@@ -2,6 +2,7 @@
     --font-base: 1rem;
     --space-base: 1rem;
     --radius-base: 0.25rem;
+    --softness-base: 0.5rem;
     --shadow-spread-base: 0.2rem;
 
     --bg-default: #3b3b3b;
@@ -32,7 +33,10 @@
     --radius-xxl: calc(var(--radius-base) * 7);
     --radius-pill: 9999px;
 
-    --softness-sm: 0.25rem;
+    --softness-sm: calc(var(--softness-base) * 0.5);
+    --softness-md: var(--softness-base);
+    --softness-lg: calc(var(--softness-base) * 2);
+    --softness-xl: calc(var(--softness-base) * 4);
 
     --shadow-blur-md: 1rem;
     --shadow-spread-sm: calc(var(--shadow-spread-base) * 0.5);
