@@ -1,16 +1,16 @@
 <section class="footer">
     <hr class="solid">
     <div class="social">
-        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" class="fa fa-linkedin-square" aria-label="Mon Profil LinkedIn"></a>
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" aria-label="Mon Profil LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
         <p>•</p>
-        <a href="mailto:{{ site.email }}" class="fa fa-envelope" aria-label="Mon Adresse Mail"></a>
+        <a href="mailto:{{ site.email }}" aria-label="Mon Adresse Mail"><i class="fa-solid fa-envelope"></i></a>
         <p>•</p>
-        <a href="https://github.com/{{ site.social.github }}" class="fa fa-github-square" aria-label="Mon Profil Github"></a>
+        <a href="https://github.com/{{ site.social.github }}" aria-label="Mon Profil Github"><i class="fa-brands fa-square-github"></i></a>
     </div>
     <div>
-        <a href="mailto:{{ site.email }}" class="fa fa-envelope" aria-hidden="true"> {{ site.email }}</a>
+        <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>
         <p>•</p>
-        <a href="tel:+33{{ site.phone | remove: ' ' }}" class="fa fa-phone" aria-label="Mon Téléphone"> {{ site.phone }}</a>
+        <a href="tel:+33{{ site.phone | remove: ' ' }}" aria-label="Mon Téléphone"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
     </div>
     <p class="copyright"> Copyright {{ site.start_year }} - {{ "now" | date: "%Y" }} © {{ site.firstname }} {{ site.lastname }}</p>
 </section>

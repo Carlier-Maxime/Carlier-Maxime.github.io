@@ -8,6 +8,16 @@
     font-weight: normal;
 }
 
+i[class*="fa-"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+}
+
 body {
     overflow: hidden;
     height: 100dvh;
