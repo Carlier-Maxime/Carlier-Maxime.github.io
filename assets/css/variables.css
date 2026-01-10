@@ -39,6 +39,7 @@
     --shadow-spread-md: var(--shadow-spread-base);
     --shadow-spread-lg: calc(var(--shadow-spread-base) * 1.25);
 
+    --bg-float: color-mix(in srgb, var(--bg-default), white 20%);
     --bg-surface: color-mix(in srgb, var(--bg-default), white 10%);
     --bg-base: var(--bg-default);
     --bg-dim: color-mix(in srgb, var(--bg-default), black 10%);
