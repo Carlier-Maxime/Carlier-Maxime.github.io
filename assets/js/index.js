@@ -17,5 +17,5 @@ containers.forEach(container => {
     }
 
     media.addEventListener('play', draw);
-    if (!video.paused) draw();
+    if (!media.paused) draw();
 });
