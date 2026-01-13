@@ -6,9 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preload" href="/assets/css/default.css" as="style">
     <link rel="stylesheet" href="/assets/css/default.css">
     {% if page.css %}
+    <link rel="preload" href="/assets/css/{{ page.css }}" as="style">
     <link rel="stylesheet" href="/assets/css/{{ page.css }}">
     {% endif %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    {% assign fa_url = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" %}
+    <link rel="stylesheet" href="{{ fa_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ fa_url }}"></noscript>
 </head>
