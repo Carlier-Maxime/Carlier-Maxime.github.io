@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-image: url('/assets/media/dev.jpg');
+    background-image: url('/assets/media/dev.webp');
     background-color: var(--bg-banner);
     background-size: contain;
     background-repeat: no-repeat;
