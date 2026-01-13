@@ -29,3 +29,5 @@ exclude:
 collections:
   projects:
     output: true
+
+mediaDir: /assets/media/

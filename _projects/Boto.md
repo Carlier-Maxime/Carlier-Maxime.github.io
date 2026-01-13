@@ -7,7 +7,6 @@ description: >
   ce fut réalisée par groupe de 7 étudiant, 3 pour le back et 4 pour le front.
   J'étais bien entendu du coté back-end. (non hébergé)
 link: https://github.com/Carlier-Maxime/boto
-media: boto.webp
 competences: [PHP, Laravel, Git, SQL, PhpStorm]
 startDate: "2021-12-15"
 lastUpdate: "2021-12-17"

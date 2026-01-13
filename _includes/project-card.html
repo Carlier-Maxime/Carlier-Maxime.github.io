@@ -20,13 +20,18 @@
         </div>
     </div>
     <div class="media-container">
-        {% assign mediaSrc = include.project.media | prepend: "./assets/media/" %}
-        {% if include.project.media contains '.webm' %}
+        {% assign baseName = include.project.name %}
+        {% assign videoSrc = baseName | prepend: site.mediaDir | append: ".webm" %}
+        {% assign posterSrc = baseName | prepend: site.mediaDir | append: ".webp" %}
+        {% assign videoFile = site.static_files | where: "path", videoSrc | first %}
+        {% if videoFile %}
             <canvas class="bg-blur" aria-hidden="true"></canvas>
-            <video class="main-media" src="{{ mediaSrc }}" autoplay loop muted playsinline></video>
+            <video class="main-media" poster= "{{ posterSrc }}"
+                   preload="none" src="{{ videoSrc }}" autoplay loop muted playsinline>
+            </video>
         {% else %}
-            <img class="bg-blur" src="{{ mediaSrc }}" aria-hidden="true" alt="arrière plan flou pour les bords de l'aperçu">
-            <img class="main-media" src="{{ mediaSrc }}" alt="aperçu">
+            <img class="bg-blur" src="{{ posterSrc }}" aria-hidden="true" alt="arrière plan flou pour les bords de l'aperçu">
+            <img class="main-media" src="{{ posterSrc }}" alt="aperçu">
         {% endif %}
     </div>
 </div>

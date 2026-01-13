@@ -9,7 +9,6 @@ description: >
   Et le 'Idle' dans le nom du jeu viens du fait que je compte rajouter les mécanique de jeu de type Idle.
   Pour l'instant encore au stade de l'alpha
 link: https://github.com/Carlier-Maxime/IdleNonogram3D
-media: IdleNonogram3D.webm
 competences: [Unity, CSHARP, Git, Rider]
 startDate: "2025-02-26"
 lastUpdate: "2025-12-03"

@@ -9,7 +9,6 @@ description: >
   Cela de manière autonomne en optimisant sont trajet et en évitant d'aller chercher des objets prochent du joueur
   afin de ne pas géner le joueur sur sa propre récolte.
 link: https://github.com/Carlier-Maxime/Steering
-media: Steering.webm
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2025-01-07"
 lastUpdate: "2025-03-15"
