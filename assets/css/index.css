@@ -105,6 +105,10 @@
         }
     }
 
+    .main-media, .bg-blur {
+        transition: opacity 0.2s;
+    }
+
     .bg-blur {
         z-index: 1;
         position: absolute;

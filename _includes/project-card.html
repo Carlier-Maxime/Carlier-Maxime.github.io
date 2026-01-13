@@ -27,7 +27,7 @@
         {% if videoFile %}
             <canvas class="bg-blur" aria-hidden="true"></canvas>
             <video class="main-media" poster= "{{ posterSrc }}"
-                   preload="none" src="{{ videoSrc }}" autoplay loop muted playsinline>
+                   preload="none" data-src="{{ videoSrc }}" autoplay loop muted playsinline>
             </video>
         {% else %}
             <img class="bg-blur" src="{{ posterSrc }}" aria-hidden="true" alt="arrière plan flou pour les bords de l'aperçu">
