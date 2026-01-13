@@ -7,7 +7,7 @@ description: >
   Les mécanique sur lesquel j'ai travaillé sont : 
   les statistique, les quêtes, l'inventaire, les items et un peu sur le Material Landscape.
 link: https://gitlab.com/mga6514602/MGAProject
-media: MGAProject.gif
+media: MGAProject.webm
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2025-01-08"
 lastUpdate: "2025-08-02"
