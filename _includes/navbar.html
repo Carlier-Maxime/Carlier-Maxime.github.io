@@ -1,9 +1,39 @@
 <nav class="navbar">
-    <div class="name"><a href="index.html">{{ site.firstname }} {{ site.lastname }}</a></div>
-    <div class="navbar-links">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">A Propos</a></li>
-        </ul>
+    <div class="profile-area">
+        <img class="profile-photo" src="/assets/media/self.webp" alt="Photo de moi" fetchpriority="high">
+        <div class="profile-name-area">
+            <span class="profile-name">{{ site.firstname }} {{ site.lastname }}</span>
+            <span class="profile-job">{{ site.profession }}</span>
+        </div>
+    </div>
+    <div class="nav-area">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">A Propos</a>
+    </div>
+    <div class="stats-area">
+        <div class="stat-area rank">
+            <i class="stat-label fa-solid fa-graduation-cap"></i>
+            <span class="stat-value">{{ site.education_level }}</span>
+        </div>
+        <div class="stat-area country">
+            <i class="stat-label fa-solid fa-globe"></i>
+            <span class="stat-value">{{ site.country }}</span>
+        </div>
+        <div class="stat-area age">
+            <i class="stat-label fa-solid fa-cake-candles"></i>
+            <span class="stat-value">
+                {% assign birth_date = site.birth_date | date: "%s" %}
+                {% assign now = "now" | date: "%s" %}
+                {% assign seconds_per_year = 31536000 %}
+                {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
+                {{ age }}
+            </span>
+        </div>
+        <a class="stat-area source-code" href="{{ site.repository }}">
+            <i class="stat-label fa-brands fa-github"></i>
+        </a>
+    </div>
+    <div class="action-area">
+        <a class="button-cv" href="/assets/CV.pdf">Voir mon CV</a>
     </div>
 </nav>

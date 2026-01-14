@@ -3,36 +3,6 @@ layout: default
 css: "about.css"
 ---
 
-<section class="about-banner">
-    <div class="avatar-block">
-        <img src="/assets/media/self.webp" alt="Photo de moi" fetchpriority="high">
-        <h1>{{ site.firstname }} {{ site.lastname }}</h1>
-    </div>
-    <div class="quick-infos">
-        <div class="quick-info rank">
-            <i class="label fa-solid fa-graduation-cap"></i>
-            <span class="value">{{ site.education_level }}</span>
-        </div>
-        <div class="quick-info country">
-            <i class="label fa-solid fa-globe"></i>
-            <span class="value">{{ site.country }}</span>
-        </div>
-        <div class="quick-info age">
-            <i class="label fa-solid fa-cake-candles"></i>
-            <span class="value">
-                {% assign birth_date = site.birth_date | date: "%s" %}
-                {% assign now = "now" | date: "%s" %}
-                {% assign seconds_per_year = 31536000 %}
-                {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
-                {{ age }}
-            </span>
-        </div>
-        <a class="quick-info source-code" href="{{ site.repository }}">
-            <i class="label fa-brands fa-github"></i>
-        </a>
-    </div>
-</section>
-
 <div class="about-main">
     <section class="the-log">
         <h2 class="section-title">The Log</h2>
