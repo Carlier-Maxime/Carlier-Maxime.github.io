@@ -3,110 +3,137 @@ layout: default
 css: "about.css"
 ---
 
-<div class="about">
-    <h1>À Propos</h1>
-    <h2>Description</h2>
-    <p>
-        Cette page a pour but de vous fournir des informations me concernant et concernant ce site. <br>
-        Pour toute question, vous pouvez me contacter en allant dans la section contact ou en cliquant sur le lien de mon email en bas de la page.
-    </p>
+<section class="about-banner">
+    <div class="avatar-block">
+        <img src="/assets/media/self.webp" alt="Photo de moi" fetchpriority="high">
+        <h1>{{ site.firstname }} {{ site.lastname }}</h1>
+    </div>
+    <div class="quick-infos">
+        <div class="quick-info rank">
+            <i class="label fa-solid fa-graduation-cap"></i>
+            <span class="value">{{ site.education_level }}</span>
+        </div>
+        <div class="quick-info country">
+            <i class="label fa-solid fa-globe"></i>
+            <span class="value">{{ site.country }}</span>
+        </div>
+        <div class="quick-info age">
+            <i class="label fa-solid fa-cake-candles"></i>
+            <span class="value">
+                {% assign birth_date = site.birth_date | date: "%s" %}
+                {% assign now = "now" | date: "%s" %}
+                {% assign seconds_per_year = 31536000 %}
+                {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
+                {{ age }}
+            </span>
+        </div>
+        <a class="quick-info source-code" href="{{ site.repository }}">
+            <i class="label fa-brands fa-github"></i>
+        </a>
+    </div>
+</section>
 
-    <h2>À Propos de moi</h2>
-    <p>
-        Actuellement en Master Informatique, spécialité Ingénierie Logicielle pour les Jeux (ILJ).<br>
-        Si mon profil vous intéresse, n'hésitez pas à me contacter. <br>
-        Informations personnelles :
-    </p>
-    <ul>
-        <li>Nom : {{ site.lastname }}</li>
-        <li>Prénom : {{ site.firstname }}</li>
-        <li>
-            {% assign birth_date = site.birth_date | date: "%s" %}
-            {% assign now = "now" | date: "%s" %}
-            {% assign seconds_per_year = 31536000 %}
-            {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
+<div class="about-main">
+    <section class="the-log">
+        <h2 class="section-title">The Log</h2>
 
-            Âge: {{ age }} ans.
-        </li>
-        <li>Pays : {{ site.country }}</li>
-        <li>Profession : {{ site.profession }}</li>
-        <li class="tabContainer">
-            Compétences :
-            <table class="tab">
-                <thead>
-                <tr>
-                    <th>Langages</th>
-                    <th>Software</th>
-                    <th>Frameworks</th>
-                    <th>OS</th>
-                </tr>
-                </thead>
-                <tbody id="tabCompBody">
-                    {% assign languages = "" | split: "," %}
-                    {% assign softwares = "" | split: "," %}
-                    {% assign frameworks = "" | split: "," %}
-                    {% assign oss = "" | split: "," %}
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">2022 2025</div>
+                <div class="timeline-checkpoint"></div>
+                <div class="timeline-content">
+                    <h3>Master ILJ & L3 Info</h3>
+                    <p>Faculté des Sciences Jean Perrin, Lens. Spécialité Ingénierie Logicielle pour les Jeux.</p>
+                </div>
+            </div>
 
-                    {% for comp_entry in site.data.competences %}
-                        {% assign comp = comp_entry[1] %}
-                        {% if comp.category == "Language" %}
-                            {% assign languages = languages | push: comp %}
-                        {% elsif comp.category == "Software" %}
-                            {% assign softwares = softwares | push: comp %}
-                        {% elsif comp.category == "Framework" %}
-                            {% assign frameworks = frameworks | push: comp %}
-                        {% elsif comp.category == "OS" %}
-                            {% assign oss = oss | push: comp %}
-                        {% endif %}
-                    {% endfor %}
+            <div class="timeline-item">
+                <div class="timeline-date">2020 2022</div>
+                <div class="timeline-checkpoint"></div>
+                <div class="timeline-content">
+                    <h3>DUT Informatique</h3>
+                    <p>IUT de Lens. Acquisition des bases solides en développement et algorithmie.</p>
+                </div>
+            </div>
 
-                    {% assign size_lang = languages.size %}
-                    {% assign size_soft = softwares.size %}
-                    {% assign size_frame = frameworks.size %}
-                    {% assign size_os = oss.size %}
+            <div class="timeline-item">
+                <div class="timeline-date">2017 2020</div>
+                <div class="timeline-checkpoint"></div>
+                <div class="timeline-content">
+                    <h3>Baccalauréat Scientifique</h3>
+                    <p>Lycée Pasteur, Hénin-Beaumont. Spécialité ISN (Informatique et Sciences du Numérique).</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    {% assign max_size = size_lang %}
-                    {% if size_soft > max_size %}{% assign max_size = size_soft %}{% endif %}
-                    {% if size_frame > max_size %}{% assign max_size = size_frame %}{% endif %}
-                    {% if size_os > max_size %}{% assign max_size = size_os %}{% endif %}
+    <section class="inventory-container">
+        <h2 class="section-title">The Inventory</h2>
 
-                    {% for i in (0..max_size) %}
-                        {% if i < max_size %}
-                        <tr>
-                            <td>
-                                {% if i < size_lang %}
-                                    <a href="{{ languages[i].link }}" target="_blank">{{ languages[i].name }}</a>
-                                {% endif %}
-                            </td>
-                            <td>
-                                {% if i < size_soft %}
-                                    <a href="{{ softwares[i].link }}" target="_blank">{{ softwares[i].name }}</a>
-                                {% endif %}
-                            </td>
-                            <td>
-                                {% if i < size_frame %}
-                                    <a href="{{ frameworks[i].link }}" target="_blank">{{ frameworks[i].name }}</a>
-                                {% endif %}
-                            </td>
-                            <td>
-                                {% if i < size_os %}
-                                    <a href="{{ oss[i].link }}" target="_blank">{{ oss[i].name }}</a>
-                                {% endif %}
-                            </td>
-                        </tr>
-                        {% endif %}
-                    {% endfor %}
-                </tbody>
-            </table>
-        </li>
-        <li>Projets : Pour avoir la liste des projets, retournez à la page d'accueil.</li>
-        <li>Email : <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li>Téléphone : 07 84 17 26 58</li>
-    </ul>
+        {% assign languages = "" | split: "," %}
+        {% assign softwares = "" | split: "," %}
+        {% assign frameworks = "" | split: "," %}
+        {% assign oss = "" | split: "," %}
 
-    <h2>À Propos du site</h2>
-    <p>
-        Ce site a pour objectif de vous présenter mes projets, mes compétences et diverses informations sur moi.
-    </p>
-    <br>
+        {% for comp_entry in site.data.competences %}
+            {% assign comp = comp_entry[1] %}
+            {% if comp.category == "Language" %}
+                {% assign languages = languages | push: comp %}
+            {% elsif comp.category == "Software" %}
+                {% assign softwares = softwares | push: comp %}
+            {% elsif comp.category == "Framework" %}
+                {% assign frameworks = frameworks | push: comp %}
+            {% elsif comp.category == "OS" %}
+                {% assign oss = oss | push: comp %}
+            {% endif %}
+        {% endfor %}
+
+        <div class="inventory-category">
+            <h3 class="category-subtitle">Languages Skills</h3>
+            <div class="inventory-grid">
+                {% for language in languages %}
+                    <a class="skill-card" href="{{ language.link }}" target="_blank">
+                        <i class="skill-icon fa-solid fa-question"></i>
+                        <span class="skill-name">{{ language.name }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="inventory-category">
+            <h3 class="category-subtitle">Software's</h3>
+            <div class="inventory-grid">
+                {% for software in softwares %}
+                <a class="skill-card" href="{{ software.link }}" target="_blank">
+                    <i class="skill-icon fa-solid fa-question"></i>
+                    <span class="skill-name">{{ software.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="inventory-category">
+            <h3 class="category-subtitle">Frameworks</h3>
+            <div class="inventory-grid">
+                {% for framework in frameworks %}
+                <a class="skill-card" href="{{ framework.link }}" target="_blank">
+                    <i class="skill-icon fa-solid fa-question"></i>
+                    <span class="skill-name">{{ framework.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="inventory-category">
+            <h3 class="category-subtitle">OS</h3>
+            <div class="inventory-grid">
+                {% for os in oss %}
+                <a class="skill-card" href="{{ os.link }}" target="_blank">
+                    <i class="skill-icon fa-solid fa-question"></i>
+                    <span class="skill-name">{{ os.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 </div>

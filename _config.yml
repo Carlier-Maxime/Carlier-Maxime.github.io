@@ -4,9 +4,12 @@ lastname: Carlier
 email: 28m06c02@gmail.com
 phone: "07 84 17 26 58"
 country: France
+education_level: "Master"
+education_full: "Master ILJ (Ingénierie Logicielle pour les Jeux)"
 profession: Game Developer
 baseurl: ""
 url: "https://carlier-maxime.github.io/"
+repository: "https://github.com/Carlier-Maxime/Carlier-Maxime.github.io"
 
 start_year: 2023
 birth_date: 2002-06-28
