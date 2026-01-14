@@ -1,33 +1,46 @@
 window.addEventListener("load", () => {
     const containers = document.querySelectorAll('.media-container');
 
-    const videoObserver = new IntersectionObserver((entries, observer) => {
+    const mediaObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            const video = entry.target;
+            const media = entry.target;
+            const ratio = entry.intersectionRatio;
+            const isVideo = media.tagName === 'VIDEO';
+
             if (entry.isIntersecting) {
-                if (video.dataset.src) {
-                    video.src = video.dataset.src;
-                    video.load();
-                    delete video.dataset.src;
+                if (isVideo && media.dataset.poster) {
+                    media.poster = media.dataset.poster;
+                    delete media.dataset.poster;
+                }
+                if (ratio < 0.2) return
+
+                if (media.dataset.src) {
+                    media.src = media.dataset.src;
+                    if (isVideo) media.load();
+                    else observer.unobserve(media);
+                    delete media.dataset.src;
                 }
 
-                if (video.pause) {
-                    video.play().catch(e => {
-                        console.warn("Autoplay blocked or video not ready");
-                    });
+                if (isVideo) {
+                    media.play().catch(e => console.warn("Autoplay blocked"));
                 }
             } else {
-                if (!video.paused) {
-                    video.pause();
+                if (isVideo && !media.paused) {
+                    media.pause();
                 }
             }
         });
-    }, { rootMargin: "0px 0px 200px 0px", threshold: 0.1 });
+    }, { rootMargin: "0px 0px 300px 0px", threshold: [0, 0.25] });
 
     containers.forEach(container => {
         const media = container.querySelector('video.main-media');
         const canvas = container.querySelector('.bg-blur');
-        if (!media || !canvas) return;
+        if (!media) {
+            mediaObserver.observe(container.querySelector('img.main-media'))
+            mediaObserver.observe(container.querySelector('img.bg-blur'));
+            return;
+        }
+        if (!canvas) return;
 
         const ctx = canvas.getContext('2d', { alpha: false });
         canvas.width = 64;
@@ -54,6 +67,6 @@ window.addEventListener("load", () => {
             requestAnimationFrame(drawVideo);
         });
 
-        videoObserver.observe(media);
+        mediaObserver.observe(media);
     });
 });
