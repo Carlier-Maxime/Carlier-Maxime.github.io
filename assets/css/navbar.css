@@ -94,6 +94,11 @@
             border-radius: var(--radius-sm);
             font-size: var(--font-lg);
             text-wrap: nowrap;
+
+            &:hover {
+                filter: brightness(1.2);
+                box-shadow: 0 0 var(--shadow-blur-md) 0 var(--bg-deep);
+            }
         }
     }
 
@@ -128,6 +133,20 @@
                 padding: var(--space-xxs) var(--space-xs);
             }
         }
+
+        a, i {
+            transition: all .2s ease 0s;
+        }
+
+        a:hover {
+            &, i {
+                filter: brightness(1.2);
+            }
+
+            i {
+                animation: fa-beat 1s infinite;
+            }
+        }
     }
 
     .action-area {
@@ -150,7 +169,8 @@
 
             &:hover {
                 filter: brightness(1.2) hue-rotate(-10deg);
-                transform: scale(1.05)
+                transform: scale(1.05);
+                box-shadow: 0 0 var(--shadow-blur-sm) 0 var(--bg-btn-border);
             }
         }
     }
