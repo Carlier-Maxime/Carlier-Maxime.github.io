@@ -26,12 +26,12 @@
         {% assign videoFile = site.static_files | where: "path", videoSrc | first %}
         {% if videoFile %}
             <canvas class="bg-blur" aria-hidden="true"></canvas>
-            <video class="main-media" data-poster= "{{ posterSrc }}"
+            <video class="main-media zoomable" data-poster= "{{ posterSrc }}"
                    preload="none" data-src="{{ videoSrc }}" autoplay loop muted playsinline>
             </video>
         {% else %}
             <img class="bg-blur" data-src="{{ posterSrc }}" aria-hidden="true" alt="">
-            <img class="main-media" data-src="{{ posterSrc }}" alt="aperçu">
+            <img class="main-media zoomable" data-src="{{ posterSrc }}" alt="aperçu">
         {% endif %}
     </div>
 </div>
