@@ -70,3 +70,32 @@ window.addEventListener("load", () => {
         mediaObserver.observe(media);
     });
 });
+
+const projectsContainer = document.getElementById('projects');
+const projects = Array.from(document.querySelectorAll('.project'));
+
+function buildMasonry() {
+    const minColWidth = 400;
+    const containerWidth = projectsContainer.offsetWidth;
+    let nbCols = Math.max(1, Math.floor(containerWidth / minColWidth));
+    if (nbCols === 1) return;
+
+    projectsContainer.innerHTML = '';
+    projectsContainer.classList.add('masonry');
+    const cols = [];
+
+    for(let i=0; i < nbCols; i++) {
+        const col = document.createElement('div');
+        col.className = 'project-column';
+        projectsContainer.appendChild(col);
+        cols.push(col);
+    }
+
+    projects.forEach((project, index) => {
+        cols[index % nbCols].appendChild(project);
+        project.classList.add('pj-in-cl')
+    });
+}
+
+window.addEventListener('resize', buildMasonry);
+window.onload = buildMasonry;
