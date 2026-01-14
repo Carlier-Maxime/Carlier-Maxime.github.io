@@ -3,6 +3,7 @@
     --space-base: 1rem;
     --radius-base: 0.25rem;
     --softness-base: 0.5rem;
+    --shadow-blur-base: 1rem;
     --shadow-spread-base: 0.2rem;
 
     --bg-default: #3b3b3b;
@@ -38,7 +39,9 @@
     --softness-lg: calc(var(--softness-base) * 2);
     --softness-xl: calc(var(--softness-base) * 4);
 
-    --shadow-blur-md: 1rem;
+    --shadow-blur-md: var(--shadow-blur-base);
+    --shadow-blur-lg: calc(var(--shadow-blur-base) * 2);
+
     --shadow-spread-sm: calc(var(--shadow-spread-base) * 0.5);
     --shadow-spread-md: var(--shadow-spread-base);
     --shadow-spread-lg: calc(var(--shadow-spread-base) * 1.25);
