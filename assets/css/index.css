@@ -24,7 +24,7 @@
     background-image: none;
     box-shadow: 0 0 var(--shadow-blur-md) var(--shadow-spread-lg) var(--bg-surface);
     border-radius: var(--space-md);
-    min-height: 20rem;
+    min-height: 30dvh;
     max-width: 60rem;
     width: 95%;
     margin: var(--space-lg) auto;
@@ -193,6 +193,10 @@
             text-align: center;
             color: var(--fg-abyss);
             font-family: sans-serif;
+
+            max-width: 100%;
+            max-height: 40dvh;
+            margin: auto;
 
             font-size: clamp(var(--font-sm), var(--font-xl), var(--font-xxl));
         }
