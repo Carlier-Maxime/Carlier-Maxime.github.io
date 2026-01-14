@@ -78,7 +78,17 @@ function buildMasonry() {
     const minColWidth = 400;
     const containerWidth = projectsContainer.offsetWidth;
     let nbCols = Math.max(1, Math.floor(containerWidth / minColWidth));
-    if (nbCols === 1) return;
+    if (nbCols === 1) {
+        if (projectsContainer.classList.contains('masonry')) {
+            projectsContainer.classList.remove('masonry');
+            projectsContainer.innerHTML = '';
+            projects.forEach((project, index) => {
+                projectsContainer.appendChild(project);
+                project.classList.remove('pj-in-cl')
+            });
+        }
+        return;
+    }
 
     projectsContainer.innerHTML = '';
     projectsContainer.classList.add('masonry');
