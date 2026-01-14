@@ -39,6 +39,7 @@
     --softness-lg: calc(var(--softness-base) * 2);
     --softness-xl: calc(var(--softness-base) * 4);
 
+    --shadow-blur-sm: calc(var(--shadow-blur-base) * 0.5);
     --shadow-blur-md: var(--shadow-blur-base);
     --shadow-blur-lg: calc(var(--shadow-blur-base) * 2);
 
