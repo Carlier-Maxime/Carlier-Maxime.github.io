@@ -35,3 +35,5 @@ collections:
     output: true
 
 mediaDir: /assets/media/
+videoDir: /assets/media/videos/
+posterDir: /assets/media/posters/

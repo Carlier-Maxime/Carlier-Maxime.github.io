@@ -21,17 +21,18 @@
     </div>
     <div class="media-container">
         {% assign baseName = include.project.name %}
-        {% assign videoSrc = baseName | prepend: site.mediaDir | append: ".webm" %}
-        {% assign posterSrc = baseName | prepend: site.mediaDir | append: ".webp" %}
+        {% assign videoSrc = baseName | prepend: site.videoDir | append: ".webm" %}
         {% assign videoFile = site.static_files | where: "path", videoSrc | first %}
         {% if videoFile %}
             <canvas class="bg-blur" aria-hidden="true"></canvas>
+            {% assign posterSrc = baseName | prepend: site.posterDir | append: ".webp" %}
             <video class="main-media zoomable" data-poster= "{{ posterSrc }}"
                    preload="none" data-src="{{ videoSrc }}" autoplay loop muted playsinline>
             </video>
         {% else %}
-            <img class="bg-blur" data-src="{{ posterSrc }}" aria-hidden="true" alt="">
-            <img class="main-media zoomable" data-src="{{ posterSrc }}" alt="aperçu">
+            {% assign imgSrc = baseName | prepend: site.mediaDir | append: ".webp" %}
+            <img class="bg-blur" data-src="{{ imgSrc }}" aria-hidden="true" alt="">
+            <img class="main-media zoomable" data-src="{{ imgSrc }}" alt="aperçu">
         {% endif %}
     </div>
 </div>
