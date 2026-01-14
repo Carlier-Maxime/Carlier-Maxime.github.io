@@ -5,7 +5,7 @@
     display: grid;
     justify-content: space-between;
     align-items: stretch;
-    height: 16dvh;
+    height: 12dvh;
     background-color: var(--bg-abyss);
     z-index: 100;
 
