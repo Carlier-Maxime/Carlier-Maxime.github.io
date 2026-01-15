@@ -22,6 +22,12 @@
 
 .background {
     .tab {
+        .cell {
+            -webkit-font-smoothing: none;
+            font-weight: bold;
+            font-size: var(--font-xl);
+        }
+
         .c0 {
             color: var(--fg-default);
         }
@@ -36,6 +42,14 @@
 
         .c3 {
             color: var(--fg-abyss);
+        }
+
+        .c4 {
+            color: black;
+        }
+
+        .c5 {
+            color: white;
         }
 
         .cl0 {
