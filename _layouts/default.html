@@ -11,7 +11,8 @@
         </div>
         {% include lightbox.html %}
         {% if page.js %}
-        <script type="module" src="assets/js/{{ page.js }}"></script>
+        {% assign cache_bust = site.time | date: '%Y%m%d%H%M%S' %}
+        <script type="module" src="assets/js/{{ page.js }}?v={{ cache_bust }}"></script>
         {% endif %}
     </body>
 </html>

@@ -3,4 +3,5 @@
     <div class="content-container"></div>
     <button class="close-btn">&times;</button>
 </div>
-<script src="/assets/js/lightbox.js"></script>
+{% assign cache_bust = site.time | date: '%Y%m%d%H%M%S' %}
+<script src="/assets/js/lightbox.js?v={{ cache_bust }}"></script>
