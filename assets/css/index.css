@@ -4,6 +4,9 @@
     box-shadow: 0 calc(var(--b) * -0.5) var(--b) calc(var(--b) * -0.5) var(--bg-voidlike);
     position: relative;
     z-index: 10;
+    h1 {
+        color: var(--fg-float);
+    }
 }
 
 #projects {
@@ -53,6 +56,7 @@
         flex-direction: column;
         overflow: hidden;
         padding: var(--space-md);
+        background-color: var(--bg-default);
 
         h1 {
             font-size: var(--font-xl);
@@ -90,7 +94,7 @@
 
                 &[href]:hover {
                     transform: scale(1.15);
-                    background: var(--bg-btn);
+                    background: var(--bg-float);
                     color: var(--fg-base);
                 }
             }
@@ -124,7 +128,7 @@
                 }
 
                 span {
-                    background-color: var(--bg-btn);
+                    background-color: var(--btn-ghost-border-clr);
                     border-radius: 0 var(--br) var(--br) 0;
                     padding-left: var(--space-xs);
                     padding-right: var(--space-xs);

@@ -42,7 +42,7 @@
     }
 
     .copyright {
-        color: var(--fg-deep);
+        color: var(--fg-abyss);
         font-size: var(--font-sm);
         margin-top: var(--space-md);
         margin-bottom: var(--space-xs);

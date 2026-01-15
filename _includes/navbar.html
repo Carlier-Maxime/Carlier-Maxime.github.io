@@ -7,25 +7,28 @@
         </div>
     </div>
     <div class="nav-area">
-        <a href="index.html">
+        {% assign home_url = '/' | relative_url %}
+        <a class="btn-ghost {% if page.id == 'home' %}is-active{% endif %}" href="{{ home_url }}">
             <i class="fa-regular fa-house"></i>
-            Accueil
+            <span>Accueil</span>
         </a>
-        <a href="about.html">
+        {% assign about_url = '/about.html' %}
+        <a class="btn-ghost {% if page.url == about_url %}is-active{% endif %}" href="{{ about_url }}">
             <i class="fa-solid fa-user"></i>
-            A Propos
+            <span>A Propos</span>
+        </a>
         </a>
     </div>
     <div class="stats-area">
-        <div class="stat-area rank">
+        <span class="stat-area rank btn-badge">
             <i class="stat-label fa-solid fa-graduation-cap"></i>
             <span class="stat-value">{{ site.education_level }}</span>
-        </div>
-        <div class="stat-area country">
+        </span>
+        <span class="stat-area country btn-badge">
             <i class="stat-label fa-solid fa-globe"></i>
             <span class="stat-value">{{ site.country }}</span>
-        </div>
-        <div class="stat-area age">
+        </span>
+        <span class="stat-area age btn-badge">
             <i class="stat-label fa-solid fa-cake-candles"></i>
             <span class="stat-value">
                 {% assign birth_date = site.birth_date | date: "%s" %}
@@ -34,12 +37,12 @@
                 {% assign age = now | minus: birth_date | divided_by: seconds_per_year %}
                 {{ age }}
             </span>
-        </div>
-        <a class="stat-area source-code" href="{{ site.repository }}">
+        </span>
+        <a class="stat-area source-code btn-badge" href="{{ site.repository }}">
             <i class="stat-label fa-brands fa-github"></i>
         </a>
     </div>
     <div class="action-area">
-        <a class="button-cv" href="/assets/CV.pdf">Voir mon CV</a>
+        <a class="button-cv btn-solid" href="/assets/CV.pdf">Voir mon CV</a>
     </div>
 </nav>

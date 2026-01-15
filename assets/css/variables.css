@@ -6,12 +6,10 @@
     --shadow-blur-base: 1rem;
     --shadow-spread-base: 0.2rem;
 
-    --bg-default: #3b3b3b;
-    --fg-default: white;
-
-    --bg-navbar: dodgerblue;
-    --bg-banner: #00b5d4;
-    --bg-btn: #1a3785;
+    --bg-default: #020937;
+    --fg-default: #dcc6bc;
+    --primary: #00b5d4;
+    --accent: #d45f00;
 
     --font-sm: calc(var(--font-base) * 0.85);
     --font-md: var(--font-base);
@@ -47,22 +45,38 @@
     --shadow-spread-md: var(--shadow-spread-base);
     --shadow-spread-lg: calc(var(--shadow-spread-base) * 1.25);
 
-    --bg-float: color-mix(in srgb, var(--bg-default), white 20%);
-    --bg-surface: color-mix(in srgb, var(--bg-default), white 10%);
+    --bg-float: color-mix(in srgb, var(--bg-default), var(--primary) 20%);
+    --bg-surface: color-mix(in srgb, var(--bg-default), var(--primary) 10%);
     --bg-base: var(--bg-default);
-    --bg-dim: color-mix(in srgb, var(--bg-default), black 10%);
-    --bg-deep: color-mix(in srgb, var(--bg-default), black 20%);
-    --bg-abyss: color-mix(in srgb, var(--bg-default), black 50%);
+    --bg-dim: color-mix(in srgb, var(--bg-default), black 15%);
+    --bg-deep: color-mix(in srgb, var(--bg-default), black 30%);
+    --bg-abyss: color-mix(in srgb, var(--bg-default), black 60%);
     --bg-voidlike: color-mix(in srgb, var(--bg-default), black 90%);
 
+    --fg-float: color-mix(in srgb, var(--fg-default), var(--accent) 50%);
+    --fg-surface: color-mix(in srgb, var(--fg-default), var(--accent) 30%);
     --fg-base: var(--fg-default);
     --fg-dim: color-mix(in srgb, var(--fg-default), var(--bg-default) 20%);
-    --fg-deep: color-mix(in srgb, var(--fg-default), var(--bg-default) 50%);
-    --fg-abyss: color-mix(in srgb, var(--fg-default), var(--bg-default) 70%);
+    --fg-deep: color-mix(in srgb, var(--fg-default), var(--bg-dim) 50%);
+    --fg-abyss: color-mix(in srgb, var(--fg-default), var(--bg-deep) 70%);
 
-    --bg-btn-border: color-mix(in srgb, var(--bg-btn), white 30%);
+    --btn-fg: var(--fg-default);
+    --btn-fg-hover: var(--fg-surface);
+    --btn-fg-active: var(--fg-float);
+    --btn-bg: var(--primary);
+    --btn-bg-hover: color-mix(in srgb, var(--primary), var(--fg-default) 15%);
+    --btn-bg-active: color-mix(in srgb, var(--primary), var(--bg-default) 20%);
+    --btn-bg-disabled: color-mix(in srgb, var(--primary), var(--bg-deep) 60%);
+    --btn-solid-border-clr: color-mix(in srgb, var(--primary), var(--bg-default) 15%);
+    --btn-solid-border-clr-hover: var(--fg-default);
+    --btn-solid-border-clr-active: var(--fg-dim);
+    --btn-ghost-border-clr: color-mix(in srgb, var(--primary), transparent 50%);
+    --btn-ghost-border-clr-hover: color-mix(in srgb, var(--primary), transparent 25%);
+    --btn-ghost-border-clr-active: color-mix(in srgb, var(--primary), transparent 10%);
+    --btn-badge-border-clr1: color-mix(in srgb, var(--accent), var(--bg-default) 50%);
+    --btn-badge-border-clr2: color-mix(in srgb, var(--accent), var(--btn-fg) 50%);
 
     --bg-img: var(--bg-voidlike);
-    --bg-footer: var(--bg-deep);
-    --fg-p: var(--fg-deep);
+    --bg-footer: var(--bg-abyss);
+    --fg-p: var(--fg-dim);
 }

@@ -59,6 +59,9 @@
             }
 
             .profile-name {
+                color: var(--fg-float);
+                font-weight: bold;
+
                 @media (orientation: landscape) {
                     font-size: var(--font-xl);
                 }
@@ -69,6 +72,8 @@
             }
 
             .profile-job {
+                color: var(--fg-dim);
+
                 @media (orientation: landscape) {
                     font-size: var(--font-lg);
                 }
@@ -84,21 +89,12 @@
         grid-area: nav;
         min-height: 0;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: center;
 
         a {
             padding: 0 var(--space-lg);
-            border: 1px solid var(--bg-deep);
             border-radius: var(--radius-sm);
-            font-size: var(--font-lg);
-            text-wrap: nowrap;
-
-            &:hover {
-                filter: brightness(1.2);
-                box-shadow: 0 0 var(--shadow-blur-md) 0 var(--bg-deep);
-            }
+            transition: all .2s ease 0s;
         }
     }
 
@@ -109,19 +105,26 @@
         align-items: center;
         justify-content: flex-end;
         flex-flow: row nowrap;
-        gap: var(--space-sm);
+
+        @media (orientation: landscape) {
+            gap: var(--space-sm);
+            .source-code {
+                margin-left: var(--space-xs);
+            }
+        }
 
         @media (orientation: portrait) {
-            flex: 0;
+            gap: var(--space-xs);
             .age, .country {
                 display: none;
+            }
+            .source-code {
+                margin-left: var(--space-xxs);
             }
         }
 
         .stat-area {
-            border: 1px solid var(--fg-p);
-            border-radius: var(--radius-pill);
-            text-wrap: nowrap;
+            color: var(--fg-dim);
 
             @media (orientation: landscape) {
                 padding: var(--space-xs) var(--space-sm);
@@ -131,20 +134,6 @@
             @media (orientation: portrait) {
                 font-size: var(--font-md);
                 padding: var(--space-xxs) var(--space-xs);
-            }
-        }
-
-        a, i {
-            transition: all .2s ease 0s;
-        }
-
-        a:hover {
-            &, i {
-                filter: brightness(1.2);
-            }
-
-            i {
-                animation: fa-beat 1s infinite;
             }
         }
     }
@@ -158,20 +147,8 @@
         justify-self: end;
 
         .button-cv {
-            background-color: var(--bg-btn);
-            border: 2px solid var(--bg-btn-border);
-            border-radius: var(--radius-pill);
-            font-size: var(--font-lg);
             padding: var(--space-xxs) var(--space-sm);
             margin: var(--space-lg) 0;
-            transition: all .2s ease 0s;
-            text-wrap: nowrap;
-
-            &:hover {
-                filter: brightness(1.2) hue-rotate(-10deg);
-                transform: scale(1.05);
-                box-shadow: 0 0 var(--shadow-blur-sm) 0 var(--bg-btn-border);
-            }
         }
     }
 }

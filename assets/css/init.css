@@ -29,11 +29,3 @@ a {
     display: block;
     cursor: pointer;
 }
-
-.hidden {
-    display: none !important;
-}
-
-.zoomable {
-    cursor: zoom-in;
-}

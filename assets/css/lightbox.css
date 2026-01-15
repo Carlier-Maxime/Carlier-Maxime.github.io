@@ -26,7 +26,7 @@
         z-index: 1002;
         max-width: 95dvw;
         max-height: 95dvh;
-        background-color: var(--bg-abyss);
+        background-color: var(--bg-dim);
         padding: var(--space-xl);
         border-radius: var(--radius-xl);
         box-shadow: 0 0 var(--shadow-blur-lg) 0 var(--bg-voidlike);

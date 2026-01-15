@@ -4,20 +4,18 @@
 @import url("footer.css");
 @import url("lightbox.css");
 
-*:not([class*="fa-"]) {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-weight: normal;
-}
-
-i[class*="fa-"] {
+i[class^="fa-"], i[class*=" fa-"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     line-height: 1;
+    aspect-ratio: 1;
 }
 
 body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: normal;
     overflow: hidden;
     height: 100dvh;
 }
@@ -27,6 +25,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     overflow-y: auto;
+    background-color: var(--bg-float);
 }
 
 main {
@@ -49,5 +48,120 @@ hr.solid {
 
     @media (orientation: portrait) {
         width: 40%;
+    }
+}
+
+button, a {
+    text-wrap: nowrap;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.zoomable {
+    cursor: zoom-in;
+}
+
+[class^="btn-"],
+[class*=" btn-"] {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-fg);
+    font-size: var(--font-lg);
+    border-radius: var(--radius-pill);
+    cursor: default;
+    transition: all .2s ease 0s;
+    z-index: 1;
+
+    &:has(> i:only-child) {
+        aspect-ratio: 1;
+        i {
+            transition: inherit;
+            transform: scale(1.3);
+        }
+    }
+
+    &:is(a[href], button:not([disabled]), [onclick], [role="button"]) {
+        cursor: pointer;
+
+        &:hover:not(.is-active) {
+            box-shadow: 0 0 var(--shadow-blur-sm) 0 var(--btn-border-clr);
+            border-color: var(--btn-border-clr-hover);
+            color: var(--btn-fg-hover);
+            &:has(> i:only-child) {
+                i {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    &.is-active {
+        color: var(--btn-fg-active);
+        border-color: var(--btn-border-clr-active);
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            bottom: calc(-1 * var(--space-xs));
+            height: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--btn-border-clr);
+        }
+    }
+}
+
+.btn-ghost {
+    --btn-border-clr: var(--btn-ghost-border-clr);
+    --btn-border-clr-hover: var(--btn-ghost-border-clr-hover);
+    --btn-border-clr-active: var(--btn-ghost-border-clr-active);
+    border: 1px solid var(--btn-border-clr);
+    background: transparent;
+}
+
+.btn-badge {
+    gap: var(--space-xxs);
+    background: transparent;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: var(--radius-pill);
+        padding: 2px;
+        background: linear-gradient(
+                135deg,
+                var(--btn-badge-border-clr1) 0%,
+                var(--btn-badge-border-clr2) 100%
+        );
+        --mask-logic: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: var(--mask-logic);
+        mask: var(--mask-logic);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+}
+
+.btn-solid {
+    --btn-border-clr: var(--btn-solid-border-clr);
+    --btn-border-clr-hover: var(--btn-solid-border-clr-hover);
+    --btn-border-clr-active: var(--btn-solid-border-clr-active);
+    border: 1px solid var(--btn-border-clr);
+    background-color: var(--btn-bg);
+
+    &:hover {
+        transform: scale(1.05);
     }
 }

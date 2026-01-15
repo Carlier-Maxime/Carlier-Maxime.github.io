@@ -18,7 +18,7 @@
         padding: var(--space-lg);
         border: 1px solid var(--fg-p);
         border-radius: var(--radius-xl);
-        background-color: var(--bg-dim);
+        background-color: var(--bg-default);
 
         @media (orientation: landscape) {
             margin: var(--space-lg);
@@ -104,7 +104,7 @@
                     border: 1px solid var(--fg-p);
                     border-radius: var(--radius-lg);
                     padding: var(--space-xs);
-                    background-color: var(--bg-deep);
+                    background-color: var(--bg-abyss);
                     flex: 1;
 
                     h3 {
@@ -150,7 +150,7 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    background-color: var(--bg-abyss);
+                    background-color: var(--bg-voidlike);
 
                     .skill-icon {
                         width: var(--space-xl);
