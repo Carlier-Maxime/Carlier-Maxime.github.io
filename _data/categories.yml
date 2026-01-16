@@ -1,12 +1,21 @@
 skills:
-  - id: Language
-    name: Programming Languages
+  - id: Engine
+    name: Game Engines
 
-  - id: Software
-    name: Software's
+  - id: GPU
+    name: GPU Computing & Graphics
+
+  - id: Language
+    name: Development Languages
 
   - id: Framework
-    name: Frameworks
+    name: Frameworks & Libraries
+
+  - id: ML
+    name: Machine Learning
+
+  - id: Software
+    name: Tools & Software
 
   - id: OS
     name: Operating Systems

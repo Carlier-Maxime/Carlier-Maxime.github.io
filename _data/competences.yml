@@ -141,12 +141,12 @@ UnrealEngine:
   name: Unreal Engine
   link: https://www.unrealengine.com/fr
   icon: mdi:unreal
-  category: Software
+  category: Engine
 Unity:
   name: Unity
   link: https://unity.com/fr
   icon: skill-icons:unity-dark
-  category: Software
+  category: Engine
 Qt:
   name: Qt
   link: https://www.qt.io/
@@ -161,37 +161,37 @@ Tensorflow:
   name: Tensorflow
   link: https://www.tensorflow.org/?hl=fr
   icon: logos:tensorflow
-  category: Framework
+  category: ML
 Keras:
   name: Keras
   link: https://keras.io/
   icon: devicon-plain:keras
-  category: Framework
+  category: ML
 PyTorch:
   name: PyTorch
   link: https://pytorch.org/
   icon: logos:pytorch-icon
-  category: Framework
+  category: ML
 OpenGL:
   name: OpenGL
   link: https://www.opengl.org/
   icon: logos:opengl
-  category: Framework
+  category: GPU
 GLFW:
   name: GLFW
   link: https://www.glfw.org/
   icon: devicon-plain:opengl
-  category: Framework
+  category: GPU
 GLM:
   name: GLM
   link: https://glm.g-truc.net/0.9.9/index.html
   icon: devicon-plain:opengl
-  category: Framework
+  category: GPU
 Vulkan:
   name: Vulkan
   link: https://www.vulkan.org/
   icon: logos:vulkan
-  category: Framework
+  category: GPU
   hide_name: true
 Manjaro:
   name: Manjaro
@@ -223,4 +223,4 @@ CUDA:
   name: CUDA
   link: https://developer.nvidia.com/cuda-zone
   icon: material-icon-theme:cuda
-  category: Language
+  category: GPU
