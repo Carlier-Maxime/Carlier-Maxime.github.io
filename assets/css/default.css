@@ -10,6 +10,8 @@ iconify-icon {
     align-items: center;
     line-height: 1;
     margin: auto;
+    width: 1em;
+    height: 1em;
 
     &[icon="noto:graduation-cap"] {
         font-size: 1.5em;
