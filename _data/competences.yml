@@ -189,7 +189,7 @@ Vulkan:
   icon: logos:vulkan
   category: Framework
 Manjaro:
-  name: Manjaro (KDE Plasma)
+  name: Manjaro
   link: https://manjaro.org/products/download/x86
   icon: logos:manjaro
   category: OS
