@@ -110,7 +110,7 @@ button, a {
             box-shadow: 0 0 var(--shadow-blur-sm) 0 var(--btn-border-clr);
             border-color: var(--btn-border-clr-hover);
             color: var(--btn-fg-hover);
-            &:has(> i:only-child) {
+            &:has(> iconify-icon:only-child) {
                 iconify-icon {
                     transform: scale(1.5);
                 }
