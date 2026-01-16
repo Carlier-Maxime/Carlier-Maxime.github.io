@@ -25,6 +25,7 @@ OpenGL:
   link: https://www.opengl.org/
   icon: logos:opengl
   category: GPU
+  hide_name: true
 GLFW:
   name: GLFW
   link: https://www.glfw.org/
