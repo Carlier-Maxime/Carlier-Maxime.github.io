@@ -76,8 +76,10 @@
                 .timeline-date {
                     font-size: var(--font-lg);
                     text-align: right;
-                    text-wrap: wrap;
+                    text-wrap: nowrap;
                     width: var(--date-width);
+                    display: flex;
+                    flex-flow: column-reverse nowrap;
                 }
 
                 .timeline-checkpoint {
