@@ -40,52 +40,59 @@
             flex-direction: column;
             gap: var(--space-xl);
             margin-top: var(--space-xl);
-            overflow: hidden;
+            position: relative;
+
+            --date-width: var(--space-xxl);
+            --checkpoint-size: var(--space-xl);
+            --checkpoint-margin-width: var(--space-sm);
+            --line-overflow: var(--space-lg);
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: var(--space-xxs);
+                transform: translateX(-50%);
+                top: calc(-1 * var(--line-overflow));
+                bottom: calc(-1 * var(--line-overflow));
+                left: calc(var(--date-width) + var(--checkpoint-margin-width) + var(--checkpoint-size)/2);
+                --bg-clr: var(--fg-p);
+                background: linear-gradient(to bottom,
+                    transparent 0%,
+                    var(--bg-clr) 20%,
+                    var(--bg-clr) 80%,
+                    transparent 100%
+                );
+                filter: opacity(0.8) drop-shadow(0 0 var(--space-xs) var(--fg-p));
+                display: block;
+                z-index: 1;
+            }
 
             .timeline-item {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                margin-left: auto;
 
                 .timeline-date {
                     font-size: var(--font-lg);
-                    text-align: left;
+                    text-align: right;
                     text-wrap: wrap;
-                    width: min-content;
-                    margin-left: auto;
+                    width: var(--date-width);
                 }
 
                 .timeline-checkpoint {
                     border: 1px solid var(--fg-p);
                     border-radius: var(--radius-pill);
                     box-shadow: 0 0  var(--shadow-blur-md) 0 var(--fg-p);
-                    width: var(--space-xl);
-                    height: var(--space-xl);
+                    width: var( --checkpoint-size);
+                    height: var(--checkpoint-size);
                     line-height: 0;
-                    margin: auto var(--space-sm);
+                    margin: auto var(--checkpoint-margin-width);
 
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     position: relative;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        width: var(--space-xxs);
-                        top: -300%;
-                        bottom: -300%;
-                        background: linear-gradient(to bottom,
-                            transparent 0%,
-                            var(--fg-p) 50%,
-                            transparent 100%
-                        );
-                        display: block;
-                        z-index: 1;
-                    }
 
                     &::after {
                         content: '';
