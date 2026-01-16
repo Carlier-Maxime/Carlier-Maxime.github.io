@@ -48,71 +48,24 @@ css: "about.css"
 
     <section class="inventory-container">
         <h2 class="section-title">The Inventory</h2>
+        {% for cat in site.data.categories.skills %}
+            {% assign skills = site.data.competences | where: "category", cat.id %}
+            {% if skills.size > 0 %}
+                <div class="inventory-category">
+                    <h3 class="category-subtitle">
+                        {{ cat.name }}
+                    </h3>
 
-        {% assign languages = "" | split: "," %}
-        {% assign softwares = "" | split: "," %}
-        {% assign frameworks = "" | split: "," %}
-        {% assign oss = "" | split: "," %}
-
-        {% for comp_entry in site.data.competences %}
-            {% assign comp = comp_entry[1] %}
-            {% if comp.category == "Language" %}
-                {% assign languages = languages | push: comp %}
-            {% elsif comp.category == "Software" %}
-                {% assign softwares = softwares | push: comp %}
-            {% elsif comp.category == "Framework" %}
-                {% assign frameworks = frameworks | push: comp %}
-            {% elsif comp.category == "OS" %}
-                {% assign oss = oss | push: comp %}
+                    <div class="inventory-grid">
+                        {% for skill in skills %}
+                            <a class="skill-card" href="{{ skill.link }}" target="_blank">
+                                <iconify-icon icon="{{ skill.icon | default: 'line-md:question' }}"></iconify-icon>
+                                <span class="skill-name">{{ skill.name }}</span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
             {% endif %}
         {% endfor %}
-
-        <div class="inventory-category">
-            <h3 class="category-subtitle">Languages Skills</h3>
-            <div class="inventory-grid">
-                {% for language in languages %}
-                    <a class="skill-card" href="{{ language.link }}" target="_blank">
-                        <iconify-icon icon="line-md:question"></iconify-icon>
-                        <span class="skill-name">{{ language.name }}</span>
-                    </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="inventory-category">
-            <h3 class="category-subtitle">Software's</h3>
-            <div class="inventory-grid">
-                {% for software in softwares %}
-                <a class="skill-card" href="{{ software.link }}" target="_blank">
-                    <iconify-icon icon="line-md:question"></iconify-icon>
-                    <span class="skill-name">{{ software.name }}</span>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="inventory-category">
-            <h3 class="category-subtitle">Frameworks</h3>
-            <div class="inventory-grid">
-                {% for framework in frameworks %}
-                <a class="skill-card" href="{{ framework.link }}" target="_blank">
-                    <iconify-icon icon="line-md:question"></iconify-icon>
-                    <span class="skill-name">{{ framework.name }}</span>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <div class="inventory-category">
-            <h3 class="category-subtitle">OS</h3>
-            <div class="inventory-grid">
-                {% for os in oss %}
-                <a class="skill-card" href="{{ os.link }}" target="_blank">
-                    <iconify-icon icon="line-md:question"></iconify-icon>
-                    <span class="skill-name">{{ os.name }}</span>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
     </section>
 </div>

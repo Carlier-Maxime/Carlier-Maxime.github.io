@@ -1,0 +1,12 @@
+skills:
+  - id: Language
+    name: Programming Languages
+
+  - id: Software
+    name: Software's
+
+  - id: Framework
+    name: Frameworks
+
+  - id: OS
+    name: Operating Systems
