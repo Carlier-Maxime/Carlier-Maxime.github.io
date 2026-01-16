@@ -207,6 +207,22 @@
             .category-subtitle {
                 font-size: var(--font-lg);
                 margin-bottom: var(--space-xs);
+                display: flex;
+                align-items: center;
+                gap: var(--space-xxs);
+
+                .icon-side {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                iconify-icon {
+                    font-size: var(--font-xl);
+                    &[icon="tabler:engine"] {
+                        transform: translateY(-7%);
+                    }
+                }
             }
 
             .inventory-grid {

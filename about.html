@@ -37,7 +37,12 @@ css: "about.css"
             {% if skills.size > 0 %}
                 <div class="inventory-category">
                     <h3 class="category-subtitle">
-                        {{ cat.name }}
+                        {% if cat.icon %}
+                            <span class="icon-side">
+                                <iconify-icon icon="{{ cat.icon }}"></iconify-icon>
+                            </span>
+                        {% endif %}
+                        <span>{{ cat.name }}</span>
                     </h3>
 
                     <div class="inventory-grid">

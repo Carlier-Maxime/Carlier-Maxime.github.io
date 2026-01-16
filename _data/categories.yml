@@ -1,21 +1,28 @@
 skills:
   - id: Engine
     name: Game Engines
+    icon: tabler:engine
 
   - id: GPU
     name: GPU Computing & Graphics
+    icon: mdi:expansion-card-variant
 
   - id: Language
     name: Development Languages
+    icon: famicons:code-slash-outline
 
   - id: Framework
     name: Frameworks & Libraries
+    icon: mdi:package-variant-closed
 
   - id: ML
     name: Machine Learning
+    icon: mdi:brain
 
   - id: Software
     name: Tools & Software
+    icon: mdi:hammer-wrench
 
   - id: OS
     name: Operating Systems
+    icon: tabler:terminal-2
