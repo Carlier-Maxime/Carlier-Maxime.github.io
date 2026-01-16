@@ -233,6 +233,8 @@
 
                     .skill-name {
                         font-size: var(--font-md);
+                        margin-top: var(--space-xxs);
+                        line-height: 1;
                     }
                 }
             }
