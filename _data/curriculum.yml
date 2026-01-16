@@ -1,17 +1,47 @@
 - title: "Master ILJ & L3 Info"
-  institution: "Faculté des Sciences Jean Perrin, Lens"
+  organization: "Faculté des Sciences Jean Perrin, Lens"
   description: "Spécialité Ingénierie Logicielle pour les Jeux."
-  start: 2022
-  end: 2025
+  start: 2022-09-01
+  end: 2025-09-01
+
+- title: "Stage Développeur IA / JV"
+  organization: "Laboratoire Mathématiques de Lens"
+  description: "Développement d'une architecture d'agent autonome pour le jeu vidéo : transition d'un modèle VLM vers VLA."
+  start: 2025-04-01
+  end: 2025-07-01
+
+- title: "Stage Développeur IA"
+  organization: "Laboratoire Mathématiques de Lens"
+  description: "Optimisation de la pipeline de markerless tracking via l'exploration de nouvelles architectures de Deep Learning pour l'analyse clinique déportée"
+  start: 2024-04-01
+  end: 2024-06-01
+
+- title: "CDD Développeur IA"
+  organization: "Laboratoire de Mathémathique de Lens"
+  description: "Développement d'une pipeline d'analyse faciale automatisée : obtention de coordonnées MOCAP sans marqueurs physiques pour le suivi médical hors site."
+  start: 2023-10-01
+  end: 2024-03-01
+
+- title: "Stage Développeur IA"
+  organization: "Laboratoire de Mathémathique de Lens"
+  description: "Développement d'un modèle basé sur StyleGAN pour le tracking de marqueurs faciaux sur vidéo, permettant le suivi clinique sans pose de marqueurs physiques."
+  start: 2023-03-01
+  end: 2023-06-01
 
 - title: "DUT Informatique"
-  institution: "IUT de Lens"
-  description: "Acquisition des bases solides en développement et algorithmie."
-  start: 2020
-  end: 2022
+  organization: "IUT de Lens"
+  description: "Étude pour acquérir et approfondir mes compétences informatique."
+  start: 2020-09-01
+  end: 2022-09-01
+
+- title: "Stage Développeur IA"
+  organization: "Institut Faire Faces"
+  description: "Génération de datasets synthétiques de visages et automatisation du placement de marqueurs MOCAP pour le projet MOSOPS."
+  start: 2022-06-01
+  end: 2022-08-01
 
 - title: "Baccalauréat Scientifique"
-  institution: "Lycée Pasteur, Hénin-Beaumont"
-  description: "Spécialité ISN (Informatique et Sciences du Numérique)."
-  start: 2017
-  end: 2020
+  organization: "Lycée Pasteur, Hénin-Beaumont"
+  description: "La Spécialité ISN (Informatique et Sciences du Numérique) m'as permis de acquérir quelques notion de base en informatique."
+  start: 2017-09-01
+  end: 2020-09-01

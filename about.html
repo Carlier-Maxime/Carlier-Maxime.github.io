@@ -11,13 +11,19 @@ css: "about.css"
             {% for log in site.data.curriculum %}
                 <div class="timeline-item">
                     <div class="timeline-date">
-                        <span class="start">{{ log.start }}</span>
-                        <span class="end">{{ log.end }}</span>
+                        <span class="start">
+                            <span class="month">{{ log.start | date: "%b." }}</span>
+                            <span class="year">{{ log.start | date: "%Y" }}</span>
+                        </span>
+                        <span class="end">
+                            <span class="month">{{ log.end | date: "%b." }}</span>
+                            <span class="year">{{ log.end | date: "%Y" }}</span>
+                        </span>
                     </div>
                     <div class="timeline-checkpoint"></div>
                     <div class="timeline-content">
                         <h3>{{ log.title }}</h3>
-                        <p>{{ log.institution }}. {log.description}</p>
+                        <p>{{ log.organization }}. {{log.description}}</p>
                     </div>
                 </div>
             {% endfor %}

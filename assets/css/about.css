@@ -42,7 +42,7 @@
             margin-top: var(--space-xl);
             position: relative;
 
-            --date-width: var(--space-xxl);
+            --date-width: calc(var(--space-xxl) * 1.5);
             --checkpoint-size: var(--space-xl);
             --checkpoint-margin-width: var(--space-sm);
             --line-overflow: var(--space-lg);
@@ -74,12 +74,22 @@
                 justify-content: center;
 
                 .timeline-date {
-                    font-size: var(--font-lg);
                     text-align: right;
                     text-wrap: nowrap;
                     width: var(--date-width);
                     display: flex;
                     flex-flow: column-reverse nowrap;
+
+                    .start, .end {
+                        .month {
+                            font-size: var(--font-md);
+                            color: var(--fg-dim);
+                        }
+
+                        .year {
+                            font-size: var(--font-lg);
+                        }
+                    }
                 }
 
                 .timeline-checkpoint {
