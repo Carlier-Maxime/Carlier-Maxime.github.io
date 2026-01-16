@@ -117,14 +117,13 @@
                 --br: var(--radius-lg);
                 border-radius: var(--br);
                 border: 1px solid var(--fg-abyss);
-                transform: translateY(3%);
 
-                i {
+                .icon-side {
                     background-color: var(--bg-float);
                     border-radius: var(--br) 0 0 var(--br);
-                    padding-left: var(--space-xs);
-                    padding-right: var(--space-xs);
+                    font-size: var(--font-xl);
                     width: 100%;
+                    padding-inline: var(--space-xxs);
                 }
 
                 span {
@@ -132,6 +131,7 @@
                     border-radius: 0 var(--br) var(--br) 0;
                     padding-left: var(--space-xs);
                     padding-right: var(--space-xs);
+                    font-size: var(--font-lg);
                     display: inline-flex;
                     align-items: center;
                 }

@@ -13,7 +13,9 @@
         <div class="control">
             <div class="date"><span class="date-name">Date de début</span><br><span class="date">{{ include.project.startDate }}</span></div>
             <a class="btn-source" href="{{ include.project.link }}">
-                <i class="fa-brands fa-github"></i>
+                <div class="icon-side">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                </div>
                 <span>Github</span>
             </a>
             <div class="date"><span class="date-name">Dernière MAJ</span><br><span class="date">{{ include.project.lastUpdate }}</span></div>

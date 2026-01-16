@@ -9,27 +9,27 @@
     <div class="nav-area">
         {% assign home_url = '/' | relative_url %}
         <a class="btn-ghost {% if page.id == 'home' %}is-active{% endif %}" href="{{ home_url }}">
-            <i class="fa-regular fa-house"></i>
+            <iconify-icon icon="gridicons:house"></iconify-icon>
             <span>Accueil</span>
         </a>
         {% assign about_url = '/about.html' %}
         <a class="btn-ghost {% if page.url == about_url %}is-active{% endif %}" href="{{ about_url }}">
-            <i class="fa-solid fa-user"></i>
+            <iconify-icon icon="mdi:about-circle-outline"></iconify-icon>
             <span>A Propos</span>
         </a>
         </a>
     </div>
     <div class="stats-area">
         <span class="stat-area rank btn-badge">
-            <i class="stat-label fa-solid fa-graduation-cap"></i>
+            <iconify-icon icon="noto:graduation-cap"></iconify-icon>
             <span class="stat-value">{{ site.education_level }}</span>
         </span>
         <span class="stat-area country btn-badge">
-            <i class="stat-label fa-solid fa-globe"></i>
+            <iconify-icon icon="fxemoji:franceflag"></iconify-icon>
             <span class="stat-value">{{ site.country }}</span>
         </span>
         <span class="stat-area age btn-badge">
-            <i class="stat-label fa-solid fa-cake-candles"></i>
+            <iconify-icon icon="fa:birthday-cake"></iconify-icon>
             <span class="stat-value">
                 {% assign birth_date = site.birth_date | date: "%s" %}
                 {% assign now = "now" | date: "%s" %}
@@ -39,7 +39,7 @@
             </span>
         </span>
         <a class="stat-area source-code btn-badge" href="{{ site.repository }}">
-            <i class="stat-label fa-brands fa-github"></i>
+            <iconify-icon icon="mdi:github"></iconify-icon>
         </a>
     </div>
     <div class="action-area">

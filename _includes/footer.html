@@ -1,18 +1,32 @@
 <section class="footer">
     <hr class="solid">
     <div class="social">
-        <a href="https://github.com/{{ site.social.github }}" aria-label="Mon Profil Github"><i class="fa-brands fa-square-github"></i></a>
-        <p>•</p>
-        <a href="https://{{ site.social.itch }}.itch.io/" aria-label="Mon Profil Github"><i class="fa-brands fa-itch-io"></i></a>
-        <p>•</p>
-        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" aria-label="Mon Profil LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
-        <p>•</p>
-        <a href="mailto:{{ site.email }}" aria-label="Mon Adresse Mail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/{{ site.social.github }}" aria-label="Mon Profil Github">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+        </a>
+        <p aria-hidden="true">•</p>
+        <a href="https://{{ site.social.itch }}.itch.io/" aria-label="Mon Profil Itch.io">
+            <iconify-icon icon="cib:itch-io"></iconify-icon>
+        </a>
+        <p aria-hidden="true">•</p>
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/" aria-label="Mon Profil LinkedIn">
+            <iconify-icon icon="mdi:linkedin"></iconify-icon>
+        </a>
+        <p aria-hidden="true">•</p>
+        <a href="mailto:{{ site.email }}" aria-label="Mon Adresse Mail">
+            <iconify-icon icon="uiw:mail"></iconify-icon>
+        </a>
     </div>
-    <div>
-        <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>
-        <p>•</p>
-        <a href="tel:+33{{ site.phone | remove: ' ' }}" aria-label="Mon Téléphone"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
+    <div class="contact">
+        <a href="mailto:{{ site.email }}">
+            <iconify-icon icon="uiw:mail"></iconify-icon>
+            <span>{{ site.email }}</span>
+        </a>
+        <p aria-hidden="true">•</p>
+        <a href="tel:+33{{ site.phone | remove: ' ' }}" aria-label="Mon Téléphone">
+            <iconify-icon icon="mdi:telephone"></iconify-icon>
+            <span>{{ site.phone }}</span>
+        </a>
     </div>
     <p class="copyright"> Copyright {{ site.start_year }} - {{ "now" | date: "%Y" }} © {{ site.firstname }} {{ site.lastname }}</p>
 </section>

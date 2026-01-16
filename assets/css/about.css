@@ -161,18 +161,11 @@
                     justify-content: center;
                     background-color: var(--bg-voidlike);
 
-                    .skill-icon {
-                        width: var(--space-xl);
-                        height: var(--space-xl);
+                    iconify-icon {
                         font-size: var(--font-xl);
-                        display: block flex;
-                        text-align: center;
-                        align-items: center;
-                        line-height: 1;
                     }
 
                     .skill-name {
-                        margin-top: var(--space-xs);
                         font-size: var(--font-md);
                     }
                 }

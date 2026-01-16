@@ -4,13 +4,28 @@
 @import url("footer.css");
 @import url("lightbox.css");
 
-i[class^="fa-"], i[class*=" fa-"] {
+iconify-icon {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    line-height: 1;
+    margin: auto;
+
+    &[icon="noto:graduation-cap"] {
+        font-size: 1.5em;
+    }
+}
+
+iconify-icon::part(icon) {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-side {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    line-height: 1;
-    aspect-ratio: 1;
 }
 
 body {
@@ -81,9 +96,9 @@ button, a {
     transition: all .2s ease 0s;
     z-index: 1;
 
-    &:has(> i:only-child) {
+    &:has(> iconify-icon:only-child) {
         aspect-ratio: 1;
-        i {
+        iconify-icon {
             transition: inherit;
             transform: scale(1.3);
         }
@@ -97,7 +112,7 @@ button, a {
             border-color: var(--btn-border-clr-hover);
             color: var(--btn-fg-hover);
             &:has(> i:only-child) {
-                i {
+                iconify-icon {
                     transform: scale(1.5);
                 }
             }

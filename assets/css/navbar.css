@@ -142,6 +142,12 @@
                 font-size: var(--font-md);
                 padding: var(--space-xxs) var(--space-xs);
             }
+
+            &.source-code {
+                iconify-icon {
+                    transform: scale(1.6);
+                }
+            }
         }
     }
 
