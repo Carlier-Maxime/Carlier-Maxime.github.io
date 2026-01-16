@@ -157,7 +157,6 @@
         display: flex;
         position: relative;
         overflow: hidden;
-        border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
         isolation: isolate;
         min-height: 0;
 
