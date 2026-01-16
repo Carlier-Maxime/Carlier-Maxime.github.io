@@ -36,13 +36,15 @@
             height: 100%;
             min-height: 0;
             width: auto;
+            border: var(--space-xxs) solid var(--fg-flare);
+            border-radius: 50%;
 
             @media (orientation: landscape) {
-                padding-right: var(--space-sm);
+                margin-right: var(--space-sm);
             }
 
             @media (orientation: portrait) {
-                padding-right: var(--space-xs);
+                margin-right: var(--space-xs);
             }
         }
 
@@ -59,7 +61,7 @@
             }
 
             .profile-name {
-                color: var(--fg-float);
+                color: var(--fg-glow);
                 font-weight: bold;
 
                 @media (orientation: landscape) {

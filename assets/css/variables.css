@@ -53,6 +53,8 @@
     --bg-abyss: color-mix(in srgb, var(--bg-default), black 60%);
     --bg-voidlike: color-mix(in srgb, var(--bg-default), black 90%);
 
+    --fg-flare: color-mix(in srgb, var(--fg-default), var(--accent) 85%);
+    --fg-glow: color-mix(in srgb, var(--fg-default), var(--accent) 70%);
     --fg-float: color-mix(in srgb, var(--fg-default), var(--accent) 50%);
     --fg-surface: color-mix(in srgb, var(--fg-default), var(--accent) 30%);
     --fg-base: var(--fg-default);
@@ -62,7 +64,7 @@
 
     --btn-fg: var(--fg-default);
     --btn-fg-hover: var(--fg-surface);
-    --btn-fg-active: var(--fg-float);
+    --btn-fg-active: var(--fg-glow);
     --btn-bg: var(--primary);
     --btn-bg-hover: color-mix(in srgb, var(--primary), var(--fg-default) 15%);
     --btn-bg-active: color-mix(in srgb, var(--primary), var(--bg-default) 20%);

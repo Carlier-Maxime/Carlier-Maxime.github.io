@@ -31,6 +31,7 @@
         .section-title {
             margin-bottom: var(--space-lg);
             font-size: var(--font-xl);
+            color: var(--fg-float);
         }
     }
 
@@ -43,7 +44,7 @@
             position: relative;
 
             --date-width: calc(var(--space-xxl) * 1.5);
-            --checkpoint-size: var(--space-xl);
+            --checkpoint-size: var(--space-lg);
             --checkpoint-margin-width: var(--space-sm);
             --line-overflow: var(--space-lg);
 
@@ -54,17 +55,15 @@
                 transform: translateX(-50%);
                 top: calc(-1 * var(--line-overflow));
                 bottom: calc(-1 * var(--line-overflow));
-                --bg-clr: var(--fg-p);
+                --bg-clr: var(--fg-flare);
                 --transparent-gap: calc(var(--line-overflow) + var(--space-xl));
                 background: linear-gradient(to bottom,
                     transparent 0,
                     var(--bg-clr) var(--transparent-gap),
-                    color-mix(in srgb, var(--bg-clr), transparent 40%) 25%,
-                    color-mix(in srgb, var(--bg-clr), transparent 55%) 50%,
-                    color-mix(in srgb, var(--bg-clr), transparent 70%) calc(100% - var(--transparent-gap)),
+                    color-mix(in srgb, var(--bg-clr), transparent 30%) calc(100% - var(--transparent-gap)),
                     transparent 100%
                 );
-                filter: opacity(0.8) drop-shadow(0 0 var(--space-xs) var(--fg-p));
+                filter: opacity(0.8) drop-shadow(0 0 var(--space-xxs) var(--bg-clr));
                 display: block;
                 z-index: 1;
 
@@ -141,9 +140,10 @@
 
                 .timeline-checkpoint {
                     grid-area: checkpoint;
-                    border: 1px solid var(--fg-p);
+                    border: 2px solid var(--fg-glow);
                     border-radius: var(--radius-pill);
-                    box-shadow: 0 0  var(--shadow-blur-md) 0 var(--fg-p);
+                    box-shadow: 0 0  var(--shadow-blur-md) var(--shadow-spread-lg) var(--fg-float);
+                    background-color: var(--fg-dim);
                     width: var( --checkpoint-size);
                     height: var(--checkpoint-size);
                     line-height: 0;
@@ -153,21 +153,10 @@
                     justify-content: center;
                     align-items: center;
                     position: relative;
+                    z-index: 1;
 
                     @media (max-aspect-ratio: 1.4/1) {
                         margin-left: 0;
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        width: var(--space-lg);
-                        height: var(--space-lg);
-                        background: var(--bg-abyss);
-                        border: 1px solid var(--fg-p);
-                        border-radius: var(--radius-pill);
-                        display: block;
-                        z-index: 2;
                     }
                 }
 
@@ -178,10 +167,6 @@
                     padding: var(--space-xs);
                     background-color: var(--bg-abyss);
                     flex: 1;
-
-                    h3 {
-                        font-size: var(--font-lg);
-                    }
 
                     p {
                         color: var(--fg-p);
