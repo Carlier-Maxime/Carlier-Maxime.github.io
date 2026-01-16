@@ -15,7 +15,7 @@
     --font-md: var(--font-base);
     --font-lg: calc(var(--font-base) * 1.25);
     --font-xl: calc(var(--font-base) * 2);
-    --font-xxl: calc(var(--font-base) * 4);
+    --font-xxl: calc(var(--font-base) * 3);
 
     --space-xxs: calc(var(--space-base) * 0.3);
     --space-xs: calc(var(--space-base) * 0.6);
