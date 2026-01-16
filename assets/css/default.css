@@ -13,8 +13,22 @@ iconify-icon {
     width: 1em;
     height: 1em;
 
+    &[icon="logos:vulkan"],
+    &[icon="logos:opengl"],
+    &[icon="devicon-plain:opengl"] {
+        width: auto;
+    }
+
     &[icon="noto:graduation-cap"] {
         font-size: 1.5em;
+    }
+
+    &[icon="logos:javascript"],
+    &[icon="logos:typescript-icon"],
+    &[icon="logos:html-5"],
+    &[icon="logos:css-3"] {
+        filter: brightness(0.9);
+        scale: 0.8;
     }
 }
 
