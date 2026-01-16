@@ -1,176 +1,220 @@
 PHP:
   name: PHP
   link: https://www.php.net/
+  icon: logos:php
   category: Language
 Java:
   name: Java
   link: https://www.oracle.com/fr/java/
+  icon: skill-icons:java-dark
   category: Language
 HTML:
   name: HTML
   link: https://html.spec.whatwg.org/multipage/
+  icon: logos:html-5
   category: Language
 CSS:
   name: CSS
   link: https://www.w3.org/Style/CSS/
+  icon: logos:css-3
   category: Language
 Angular:
   name: Angular
   link: https://angular.io/
+  icon: logos:angular-icon
   category: Framework
 TS:
   name: TypeScript
   link: https://www.typescriptlang.org/
+  icon: logos:typescript-icon
   category: Language
 Git:
   name: Git
   link: https://git-scm.com/
+  icon: logos:git-icon
   category: Software
 JavaSwing:
   name: JavaSwing
   link: https://docs.oracle.com/javase/6/docs/technotes/guides/swing/
+  icon: skill-icons:java-dark
   category: Framework
 Laravel:
   name: Laravel
   link: https://laravel.com/
+  icon: logos:laravel
   category: Framework
 SQL:
   name: SQL
   link: https://sql.sh/
+  icon: bxs:data
   category: Language
 Python:
   name: Python
   link: https://www.python.org/
+  icon: logos:python
   category: Language
 PyQt:
   name: PyQt
   link: https://wiki.python.org/moin/PyQt
+  icon: logos:qt
   category: Framework
 C:
   name: C
   link: https://fr.wikipedia.org/wiki/C_(langage)
+  icon: logos:c
   category: Language
 SDL:
   name: SDL
   link: https://www.libsdl.org/
+  icon: devicon-plain:sdl
   category: Framework
 CPlusPlus:
   name: C++
   link: https://fr.wikipedia.org/wiki/C%2B%2B
+  icon: devicon-plain:cplusplus
   category: Language
 Shell:
   name: Shell
   link: https://fr.wikipedia.org/wiki/Shell_Unix
+  icon: mdi:powershell
   category: Language
 Bash:
   name: Bash
   link: https://www.gnu.org/software/bash/
+  icon: logos:bash-icon
   category: Language
 JS:
   name: JavaScript
   link: https://developer.mozilla.org/fr/docs/Web/JavaScript
+  icon: logos:javascript
   category: Language
 Rider:
   name: Rider
   link: https://www.jetbrains.com/fr-fr/rider/
+  icon: logos:rider
   category: Software
 CLion:
   name: CLion
   link: https://www.jetbrains.com/fr-fr/clion/
+  icon: logos:clion
   category: Software
 Intellij_IDEA:
   name: Intellij IDEA
   link: https://www.jetbrains.com/idea/
+  icon: logos:intellij-idea
   category: Software
 PhpStorm:
   name: PhpStorm
   link: https://www.jetbrains.com/fr-fr/phpstorm/
+  icon: logos:phpstorm
   category: Software
 PyCharm:
   name: PyCharm
   link: https://www.jetbrains.com/fr-fr/pycharm/
+  icon: logos:pycharm
   category: Software
 WebStorm:
   name: WebStorm
   link: https://www.jetbrains.com/fr-fr/webstorm/
+  icon: logos:webstorm
   category: Software
 VS_Code:
   name: VS Code
   link: https://code.visualstudio.com/
+  icon: logos:visual-studio-code
   category: Software
 VisualStudio:
   name: Visual Studio
   link: https://visualstudio.microsoft.com/fr/
+  icon: logos:visual-studio
   category: Software
 NotepadPlusPlus:
   name: Notepad++
   link: https://notepad-plus-plus.org/
+  icon: simple-icons:notepadplusplus
   category: Software
 UnrealEngine:
   name: Unreal Engine
   link: https://www.unrealengine.com/fr
+  icon: mdi:unreal
   category: Software
 Unity:
   name: Unity
   link: https://unity.com/fr
+  icon: skill-icons:unity-dark
   category: Software
 Qt:
   name: Qt
   link: https://www.qt.io/
+  icon: logos:qt
   category: Framework
 Bootstrap:
   name: Bootstrap
   link: https://getbootstrap.com/
+  icon: logos:bootstrap
   category: Framework
 Tensorflow:
   name: Tensorflow
   link: https://www.tensorflow.org/?hl=fr
+  icon: logos:tensorflow
   category: Framework
 Keras:
   name: Keras
   link: https://keras.io/
+  icon: devicon-plain:keras
   category: Framework
 PyTorch:
   name: PyTorch
   link: https://pytorch.org/
+  icon: logos:pytorch-icon
   category: Framework
 OpenGL:
   name: OpenGL
   link: https://www.opengl.org/
+  icon: logos:opengl
   category: Framework
 GLFW:
   name: GLFW
   link: https://www.glfw.org/
+  icon: devicon-plain:opengl
   category: Framework
 GLM:
   name: GLM
   link: https://glm.g-truc.net/0.9.9/index.html
+  icon: devicon-plain:opengl
   category: Framework
 Vulkan:
   name: Vulkan
   link: https://www.vulkan.org/
+  icon: logos:vulkan
   category: Framework
 Manjaro:
   name: Manjaro (KDE Plasma)
   link: https://manjaro.org/products/download/x86
+  icon: logos:manjaro
   category: OS
 Ubuntu:
   name: Ubuntu
   link: https://www.ubuntu-fr.org/
+  icon: logos:ubuntu
   category: OS
 Fedora:
   name: Fedora
   link: https://fedoraproject.org/fr/
+  icon: logos:fedora
   category: OS
 Windows:
   name: Windows
   link: https://www.microsoft.com/fr-fr/windows/
+  icon: skill-icons:windows-dark
   category: OS
 CSHARP:
   name: C#
   link: https://fr.wikipedia.org/wiki/C_Sharp
+  icon: devicon-plain:csharp
   category: Language
 CUDA:
   name: CUDA
   link: https://developer.nvidia.com/cuda-zone
+  icon: material-icon-theme:cuda
   category: Language
