@@ -163,6 +163,13 @@
 
                     iconify-icon {
                         font-size: var(--font-xl);
+                        &[icon="devicon-plain:opengl"],
+                        &[icon="logos:c"],
+                        &[icon="devicon-plain:cplusplus"],
+                        &[icon="devicon-plain:csharp"],
+                        &[icon="devicon-plain:sdl"] {
+                            font-size: var(--font-xxl);
+                        }
                     }
 
                     .skill-name {

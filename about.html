@@ -60,7 +60,9 @@ css: "about.css"
                         {% for skill in skills %}
                             <a class="skill-card" href="{{ skill.link }}" target="_blank">
                                 <iconify-icon icon="{{ skill.icon | default: 'line-md:question' }}"></iconify-icon>
-                                <span class="skill-name">{{ skill.name }}</span>
+                                {% if skill.hide_name != true %}
+                                    <span class="skill-name">{{ skill.name }}</span>
+                                {% endif %}
                             </a>
                         {% endfor %}
                     </div>

@@ -3,6 +3,7 @@ PHP:
   link: https://www.php.net/
   icon: logos:php
   category: Language
+  hide_name: true
 Java:
   name: Java
   link: https://www.oracle.com/fr/java/
@@ -63,16 +64,19 @@ C:
   link: https://fr.wikipedia.org/wiki/C_(langage)
   icon: logos:c
   category: Language
+  hide_name: true
 SDL:
   name: SDL
   link: https://www.libsdl.org/
   icon: devicon-plain:sdl
   category: Framework
+  hide_name: true
 CPlusPlus:
   name: C++
   link: https://fr.wikipedia.org/wiki/C%2B%2B
   icon: devicon-plain:cplusplus
   category: Language
+  hide_name: true
 Shell:
   name: Shell
   link: https://fr.wikipedia.org/wiki/Shell_Unix
@@ -188,6 +192,7 @@ Vulkan:
   link: https://www.vulkan.org/
   icon: logos:vulkan
   category: Framework
+  hide_name: true
 Manjaro:
   name: Manjaro
   link: https://manjaro.org/products/download/x86
@@ -213,6 +218,7 @@ CSHARP:
   link: https://fr.wikipedia.org/wiki/C_Sharp
   icon: devicon-plain:csharp
   category: Language
+  hide_name: true
 CUDA:
   name: CUDA
   link: https://developer.nvidia.com/cuda-zone
