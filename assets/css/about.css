@@ -39,7 +39,7 @@
             display: flex;
             flex-direction: column;
             gap: var(--space-xl);
-            margin-top: var(--space-xl);
+            margin: var(--space-xl) 0;
             position: relative;
 
             --date-width: calc(var(--space-xxl) * 1.5);
@@ -56,10 +56,13 @@
                 bottom: calc(-1 * var(--line-overflow));
                 left: calc(var(--date-width) + var(--checkpoint-margin-width) + var(--checkpoint-size)/2);
                 --bg-clr: var(--fg-p);
+                --transparent-gap: calc(var(--line-overflow) + var(--space-xl));
                 background: linear-gradient(to bottom,
-                    transparent 0%,
-                    var(--bg-clr) 20%,
-                    var(--bg-clr) 80%,
+                    transparent 0,
+                    var(--bg-clr) var(--transparent-gap),
+                    color-mix(in srgb, var(--bg-clr), transparent 40%) 25%,
+                    color-mix(in srgb, var(--bg-clr), transparent 55%) 50%,
+                    color-mix(in srgb, var(--bg-clr), transparent 70%) calc(100% - var(--transparent-gap)),
                     transparent 100%
                 );
                 filter: opacity(0.8) drop-shadow(0 0 var(--space-xs) var(--fg-p));
@@ -139,14 +142,17 @@
     }
 
     .inventory-container {
+        display: flex;
+        flex-direction: column;
+
         .inventory-category {
             display: flex;
             flex-direction: column;
-            margin-top: var(--space-xs);
             background-color: var(--bg-deep);
             padding: var(--space-sm);
             border: 1px solid var(--fg-p);
             border-radius: var(--radius-lg);
+            margin: var(--space-sm) 0;
 
             .category-subtitle {
                 font-size: var(--font-lg);
