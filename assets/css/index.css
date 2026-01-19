@@ -31,6 +31,18 @@
     overflow: hidden;
     flex-direction: column-reverse;
 
+    &.highlight {
+        border: 2px solid var(--accent);
+    }
+
+    &.normal {
+        border: 2px solid var(--primary);
+    }
+
+    &.archive {
+        border: 2px solid var(--fg-abyss);
+    }
+
     &:not(.pj-in-cl) {
         @media (orientation: landscape) {
             flex-direction: row;
