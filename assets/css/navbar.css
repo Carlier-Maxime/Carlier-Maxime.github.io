@@ -18,9 +18,11 @@
         padding: var(--space-xxs) var(--space-xs);
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto auto;
+        grid-row-gap: var(--space-xs);
         grid-template-areas:
             "profile profile action"
             "nav stats stats";
+        height: 14dvh;
     }
 
     .profile-area {
@@ -45,6 +47,7 @@
 
             @media (orientation: portrait) {
                 margin-right: var(--space-xs);
+                border-width: 0;
             }
         }
 
