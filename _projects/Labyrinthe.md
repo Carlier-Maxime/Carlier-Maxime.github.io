@@ -11,4 +11,5 @@ link: https://github.com/Carlier-Maxime/labyrinthe
 competences: [Java, Git, Intellij_IDEA]
 startDate: "2021-04-22"
 lastUpdate: "2021-06-09"
+category: normal
 ---

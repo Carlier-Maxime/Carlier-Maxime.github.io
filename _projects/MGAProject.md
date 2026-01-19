@@ -10,4 +10,5 @@ link: https://gitlab.com/mga6514602/MGAProject
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2025-01-08"
 lastUpdate: "2025-08-02"
+category: highlight
 ---

@@ -7,4 +7,5 @@ link: https://github.com/Carlier-Maxime/sokoban
 competences: [Python, PyQt, Git, PyCharm]
 startDate: "2021-06-01"
 lastUpdate: "2021-06-17"
+category: normal
 ---

@@ -9,14 +9,18 @@ id: home
     <hr class="solid">
     <h1>Project</h1>
     <div id="projects">
-        {% assign projects = site.projects | sort: "lastUpdate" | reverse %}
+        {% assign all_projects = site.projects | sort: "lastUpdate" | reverse %}
+        {% assign categories = "highlight|normal|archive" | split: "|" %}
         {% assign portfolio = "" %}
-        {% for project in projects %}
-            {% if project.name == "Portfolio" %}
-                {% assign portfolio = project %}
-            {% else %}
-                {% include project-card.html project=project %}
-            {% endif %}
+        {% for cat in categories %}
+            {% assign projects = all_projects | where: "category", cat %}
+            {% for project in projects %}
+                {% if project.name == "Portfolio" %}
+                    {% assign portfolio = project %}
+                {% else %}
+                    {% include project-card.html project=project %}
+                {% endif %}
+            {% endfor %}
         {% endfor %}
         {% if portfolio != "" %}
             {% include project-card.html project=portfolio %}

@@ -12,4 +12,5 @@ link: https://github.com/Carlier-Maxime/IdleNonogram3D
 competences: [Unity, CSHARP, Git, Rider]
 startDate: "2025-02-26"
 lastUpdate: "2025-12-03"
+category: highlight
 ---

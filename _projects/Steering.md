@@ -12,4 +12,5 @@ link: https://github.com/Carlier-Maxime/Steering
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2025-01-07"
 lastUpdate: "2025-03-15"
+category: highlight
 ---

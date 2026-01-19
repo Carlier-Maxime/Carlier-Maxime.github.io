@@ -7,4 +7,5 @@ link: https://github.com/Carlier-Maxime/Visage-Generator
 competences: [Python, Git, PyTorch, OpenGL, PyCharm]
 startDate: "2022-06-09"
 lastUpdate: "2025-03-31"
+category: normal
 ---

@@ -6,4 +6,5 @@ link: https://github.com/Carlier-Maxime/DrawIO
 competences: [Java, JavaSwing, Git, Intellij_IDEA]
 startDate: "2021-11-29"
 lastUpdate: "2022-01-04"
+category: normal
 ---

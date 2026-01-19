@@ -7,4 +7,5 @@ link: https://github.com/Carlier-Maxime/Puissance4
 competences: [C, SDL, Git, CLion]
 startDate: "2022-12-08"
 lastUpdate: "2023-01-08"
+category: normal
 ---

@@ -8,4 +8,5 @@ link: https://github.com/Carlier-Maxime/MasqueFitting
 competences: [Python, Git, PyTorch, PyCharm]
 startDate: "2022-06-28"
 lastUpdate: "2023-04-05"
+category: normal
 ---

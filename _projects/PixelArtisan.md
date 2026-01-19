@@ -11,4 +11,5 @@ link: https://github.com/Carlier-Maxime/PixelArtisan
 competences: [Java, Git, Intellij_IDEA]
 startDate: "2022-02-19"
 lastUpdate: "2025-04-11"
+category: normal
 ---

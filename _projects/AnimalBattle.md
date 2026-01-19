@@ -8,4 +8,5 @@ link: https://github.com/Carlier-Maxime/AnimalBattle
 competences: [Java, Git, JavaSwing, Intellij_IDEA]
 startDate: "2021-10-21"
 lastUpdate: "2022-02-04"
+category: archive
 ---

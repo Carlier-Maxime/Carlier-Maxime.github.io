@@ -9,4 +9,5 @@ link: https://github.com/Carlier-Maxime/cudaMaze
 competences: [CUDA, CPlusPlus, Git, CLion]
 startDate: "2025-05-05"
 lastUpdate: "2026-01-05"
+category: highlight
 ---

@@ -9,4 +9,5 @@ link: https://github.com/Carlier-Maxime/avatarCreator
 competences: [CPlusPlus, Qt, CLion]
 startDate: "2022-01-14"
 lastUpdate: "2022-02-07"
+category: normal
 ---

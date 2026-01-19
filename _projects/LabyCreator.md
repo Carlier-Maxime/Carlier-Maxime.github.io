@@ -6,4 +6,5 @@ link: https://github.com/Carlier-Maxime/labyCreator
 competences: [Java, JavaSwing, Git, Intellij_IDEA]
 startDate: "2021-11-12"
 lastUpdate: "2021-12-06"
+category: archive
 ---

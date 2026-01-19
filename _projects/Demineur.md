@@ -7,4 +7,5 @@ link: https://github.com/Carlier-Maxime/Demineur
 competences: [Java, Git, JavaSwing, Intellij_IDEA]
 startDate: "2021-04-22"
 lastUpdate: "2022-01-25"
+category: archive
 ---

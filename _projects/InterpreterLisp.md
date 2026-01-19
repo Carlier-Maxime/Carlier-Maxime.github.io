@@ -7,4 +7,5 @@ link: https://github.com/Carlier-Maxime/InterpreterLisp
 competences: [Java, Shell, Git, Intellij_IDEA]
 startDate: "2024-01-14"
 lastUpdate: "2024-03-23"
+category: normal
 ---
