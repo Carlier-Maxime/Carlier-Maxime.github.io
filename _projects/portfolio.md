@@ -5,6 +5,6 @@ description: >
 link: https://github.com/Carlier-Maxime/Carlier-Maxime.github.io
 competences: [HTML, CSS, JS, Git, WebStorm]
 startDate: "2023-03-18"
-lastUpdate: "2026-01-19"
+lastUpdate: "2026-03-03"
 category: archive
 ---
