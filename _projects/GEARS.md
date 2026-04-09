@@ -10,6 +10,6 @@ description: >
 link: https://github.com/Carlier-Maxime/GEARS-Prototype
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2026-01-19"
-lastUpdate: "2026-04-07"
+lastUpdate: "2026-04-08"
 category: highlight
 ---
