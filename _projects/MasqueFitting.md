@@ -1,9 +1,9 @@
 ---
 name: MasqueFitting
 description: >
-  Masque Fitting est un programme python que j'ai réalisée pendant mes stage au sein du LML en collaboration avec l'institut faire faces.
-  celui-ci permet de faire correspondre un masque 3D d'un visage avec un visage FLAME et de extraire les marqueurs correspondant,
-  Et de créer des trou sur le masque 3D d'origine au emplacements de marqueurs obtenue.
+  Logiciel de traitement de données 3D et de vision par ordinateur développé en Python (PyTorch) au cours de mes stages au Laboratoire Mathématique de Lens (LML), en collaboration avec l'Institut Faire Faces. 
+  L'application automatise le recalage de scans 3D de masques cliniques sur le modèle statistique de visage FLAME (3D Morphable Model) afin d'en extraire précisément un ensemble de repères anatomiques (105 marqueurs). 
+  Le programme intègre un pipeline d'automatisation exploitant l'API de Blender en arrière-plan pour calculer des différences booléennes directement sur les maillages (formats OBJ/STL) et percer le masque aux coordonnées extraites.
 link: https://github.com/Carlier-Maxime/MasqueFitting
 competences: [Python, Git, PyTorch, PyCharm]
 startDate: "2022-06-28"

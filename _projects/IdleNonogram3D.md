@@ -1,13 +1,10 @@
 ---
 name: IdleNonogram3D
 description: >
-  IdleNonogram3D est un jeu mobile pour smartphone android réalisée dans le cadre de ma deuxième année de Master Informatique.
-  L'objectif du projet était de réalisé une application mobile, de préférence de type jeux video afin d'enrichir notre portfolio.
-  Par conséquent on était libre de choisir l'application à réalisé.
-  J'ai donc choisie de réaliser un jeu basé sur le jeu nonogram aussi connue sous le nom picross
-  mais en le fesant en 3D au lieu du jeu original qui est en 2D.
-  Et le 'Idle' dans le nom du jeu viens du fait que je compte rajouter les mécanique de jeu de type Idle.
-  Pour l'instant encore au stade de l'alpha
+  Jeu de réflexion en 3D développé sous Unity et ciblant les plateformes mobiles Android, réalisé dans le cadre de ma deuxième année de Master Informatique. 
+  Actuellement au stade de prototype fonctionnel, le projet adapte la mécanique traditionnelle du Picross (Nonogram) dans un espace tridimensionnel. 
+  Le cœur de l'application intègre un système de génération de grilles aléatoires, la gestion des contrôles tactiles pour la rotation de la structure 3D,
+  l'affichage dynamique des indices numériques sur les axes et la destruction sélective des cellules.
 link: https://github.com/Carlier-Maxime/IdleNonogram3D
 competences: [Unity, CSHARP, Git, Rider]
 startDate: "2025-02-26"

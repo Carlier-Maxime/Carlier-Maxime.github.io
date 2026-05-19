@@ -1,12 +1,11 @@
 ---
 name: G.E.A.R.S
 description: >
-  G.E.A.R.S. est un jeu d'automatisation (Factory Game) en vue de dessus développé sous Unreal Engine 5.
-  L'objectif ultime est de concevoir l'engrenage parfait via un système de production automatisé complexe.
-  Ce projet constitue une immersion technique personnelle dans le Gameplay Ability System (GAS) appliqué à la simulation industrielle,
-  avec un accent majeur sur la performance des systèmes en C++ Natif.
-  
-  Note: Le projet est actuellement en phase de prototype Alpha, se concentrant sur les fondations du moteur de monde procédural et l'architecture de données.
+  Prototype de jeu d'automatisation (Factory Game) en vue de dessus développé sous Unreal Engine 5.7+. 
+  Actuellement en phase alpha, ce projet personnel sert de sandbox technique pour poser des fondations hautement optimisées en C++ Natif. 
+  Le travail actuel se concentre sur l'architecture de données "data-driven" (UPrimaryDataAsset) pour un chargement via l'Asset Manager,
+  ainsi que sur le développement du sous-système de monde et du moteur de génération procédurale. 
+  L'ensemble de l'architecture est pensé dès la racine pour intégrer à terme le Gameplay Ability System (GAS) appliqué à l'industrie et un rendu de masse via HISM.
 link: https://github.com/Carlier-Maxime/GEARS-Prototype
 competences: [UnrealEngine, CPlusPlus, Git, Rider]
 startDate: "2026-01-19"
